@@ -1,0 +1,81 @@
+[
+{
+    "heading":"Laptops",
+    "cat":"lp",
+    "desc":"Discover the best Laptops in ourr store",
+    "types":
+    [
+    {
+        "img":"https://imgur.com/BThRfhH.jpg",
+        "name":"Apple Macbook Air M1",
+        "actual_price":"92,900",
+        "discounted_price":"90,599",
+        "rating":4.5,
+        "total_rating":4
+    },
+    {
+        "img":"https://imgur.com/Cf0LK8V.jpg",
+        "name":"Asus ROG Zephyrus G15",
+        "actual_price":"2,44,990",
+        "discounted_price":"1,89,990",
+        "rating":4,
+        "total_rating":3
+    },
+    {
+        "img":"https://imgur.com/3rJmyor.jpg",
+        "name":"Asus ROG Zephyrus G15",
+        "actual_price":"70,600",
+        "discounted_price":"56,100",
+        "rating":4.2,
+        "total_rating":5
+    },
+    {
+        "img":"https://imgur.com/OgSIiKR.jpg",
+        "name":"Lenovo IdeaPad 3 Core i3",
+        "actual_price":"60,890",
+        "discounted_price":"33,890",
+        "rating":4,
+        "total_rating":8
+    }
+]
+},{
+    "heading":"Mobiles",
+    "cat":"mb",
+    "desc":"Discover the best Laptops in ourr store",
+    "types":
+    [
+    {
+        "img":"https://imgur.com/JMUjJfX.jpg",
+        "name":"Apple Iphone 14 (MPWW3HN/A) Mobile (512 GB Storage)",
+        "actual_price":"1,09,900",
+        "discounted_price":"1,07,900",
+        "rating":4.5,
+        "total_rating":12
+    },
+    {
+        "img":"https://imgur.com/JA4fOMX.jpg",
+        "name":"Samsung Galaxy S22 Ultra 5G (12GB/256GB) Phantom Black Mobile (12 GB RAM, 256 GB Storage)",
+        "actual_price":"1,31,999",
+        "discounted_price":"94,749",
+        "rating":4.9,
+        "total_rating":32
+    },
+    {
+        "img":"https://imgur.com/nfar4US.jpg",
+        "name":"Redmi Note 12 Pro 5G 8GB 256GB Oynx Black-Activated smart-phones ( 8 GB 256 GB )",
+        "actual_price":"31,999",
+        "discounted_price":"28,509",
+        "rating":4.4,
+        "total_rating":51
+    },
+    {
+        "img":"https://imgur.com/Eg8PoX7.jpg",
+        "name":"OnePlus NORD 2 12GB 256GB Blue Haze-Activated smart-phones ( 12 GB 256 GB )",
+        "actual_price":"34,999",
+        "discounted_price":"30,529",
+        "rating":4,
+        "total_rating":3
+    }
+]
+}
+]
