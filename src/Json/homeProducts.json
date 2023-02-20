@@ -2,38 +2,38 @@
 {
     "heading":"Laptops",
     "cat":"lp",
-    "desc":"Discover the best Laptops in ourr store",
+    "desc":"Discover the best Laptops in our store",
     "types":
     [
     {
-        "img":"https://imgur.com/BThRfhH.jpg",
-        "name":"Apple Macbook Air M1",
-        "actual_price":"92,900",
-        "discounted_price":"90,599",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664416536/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257130_0_htx0fu.png/mxw_200,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"ASUS TUF Gaming A17 FA706IC-HX036W AMD Ryzen 7 (17.3 inch, 8GB, 512GB, Windows 11 Home, NVIDIA GeForce RTX 3050, FHD IPS Display, Graphite Black, 90NR0675-M002F0)",
+        "actual_price":"94,900",
+        "discounted_price":"67,990",
         "rating":4.5,
         "total_rating":4
     },
     {
-        "img":"https://imgur.com/Cf0LK8V.jpg",
-        "name":"Asus ROG Zephyrus G15",
-        "actual_price":"2,44,990",
-        "discounted_price":"1,89,990",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663350670/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245235_0_lkhkv1.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Apple MacBook Pro 2020 (M1, 14.2 inch, 16GB, 1TB, macOS Monterey, Silver)",
+        "actual_price":"2,39,900",
+        "discounted_price":"2,19,900",
         "rating":4,
         "total_rating":3
     },
     {
-        "img":"https://imgur.com/3rJmyor.jpg",
-        "name":"Asus ROG Zephyrus G15",
-        "actual_price":"70,600",
-        "discounted_price":"56,100",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1669811984/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257099_thydyu.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"HP Spectre f1009TX Core i7 12th Gen Intel Evo Windows 11 Home 2-in-1 Laptop (16GB RAM, 1TB SSD, Intel Arc A370M + 4 GB GDDR6, MS Office, 40.6cm, 6J2T82PA#ACJ, Nocturne Blue)",
+        "actual_price":"1,93,150",
+        "discounted_price":"1,78,000",
         "rating":4.2,
         "total_rating":5
     },
     {
-        "img":"https://imgur.com/OgSIiKR.jpg",
-        "name":"Lenovo IdeaPad 3 Core i3",
-        "actual_price":"60,890",
-        "discounted_price":"33,890",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1668662427/Croma%20Assets/Computers%20Peripherals/Laptop/Images/262352_0_khm1ns.png/mxw_200,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Dell Inspiron 3525 AMD Ryzen 3 (15.6 inch, 8GB, 256GB, Windows 11, MS Office 2021, AMD Radeon, FHD, Platinum Silver, D560831WIN9SE)",
+        "actual_price":"45,000",
+        "discounted_price":"44,990",
         "rating":4,
         "total_rating":8
     }
@@ -41,41 +41,82 @@
 },{
     "heading":"Mobiles",
     "cat":"mb",
-    "desc":"Discover the best Laptops in ourr store",
+    "desc":"Discover the best Mobiles in our store",
     "types":
     [
     {
-        "img":"https://imgur.com/JMUjJfX.jpg",
-        "name":"Apple Iphone 14 (MPWW3HN/A) Mobile (512 GB Storage)",
-        "actual_price":"1,09,900",
-        "discounted_price":"1,07,900",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Apple iPhone 14 Pro Max (256GB, Deep Purple)",
+        "actual_price":"149,900",
+        "discounted_price":"144,990",
         "rating":4.5,
         "total_rating":12
     },
     {
-        "img":"https://imgur.com/JA4fOMX.jpg",
-        "name":"Samsung Galaxy S22 Ultra 5G (12GB/256GB) Phantom Black Mobile (12 GB RAM, 256 GB Storage)",
-        "actual_price":"1,31,999",
-        "discounted_price":"94,749",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662420200/Croma%20Assets/Communication/Mobiles/Images/233756_e1tmq7.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"OnePlus 9 Pro 5G (12GB RAM, 256GB, Pine Green)",
+        "actual_price":"69,999",
+        "discounted_price":"54,999",
         "rating":4.9,
         "total_rating":32
     },
     {
-        "img":"https://imgur.com/nfar4US.jpg",
-        "name":"Redmi Note 12 Pro 5G 8GB 256GB Oynx Black-Activated smart-phones ( 8 GB 256 GB )",
-        "actual_price":"31,999",
-        "discounted_price":"28,509",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347118/Croma%20Assets/Communication/Mobiles/Images/268878_dygou8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)",
+        "actual_price":"116,999",
+        "discounted_price":"94,999",
         "rating":4.4,
         "total_rating":51
     },
     {
-        "img":"https://imgur.com/Eg8PoX7.jpg",
-        "name":"OnePlus NORD 2 12GB 256GB Blue Haze-Activated smart-phones ( 12 GB 256 GB )",
-        "actual_price":"34,999",
-        "discounted_price":"30,529",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662438528/Croma%20Assets/Communication/Mobiles/Images/252195_nojq8m.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Xiaomi 12 Pro 5G (12GB RAM, 256GB, Opera Mauve)",
+        "actual_price":"84,999",
+        "discounted_price":"57,999",
         "rating":4,
         "total_rating":3
     }
+    
+]
+},{
+    "heading":"Tablets",
+    "cat":"tb",
+    "desc":"Discover the best Tablets in our store",
+    "types":
+    [
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667854771/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/247596_0_flquxt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"SAMSUNG Galaxy Tab A8 Wi-Fi + 4G Android Tablet (10.5 Inch, 4GB RAM, 64GB ROM, Dark Grey)",
+        "actual_price":"20,799",
+        "discounted_price":"19,999",
+        "rating":4.8,
+        "total_rating":22
+    },
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667849714/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/245650_0_ksd3sp.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Blue)",
+        "actual_price":"19,499",
+        "discounted_price":"15,649",
+        "rating":5,
+        "total_rating":15
+    },
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667848350/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/244447_0_onx1rq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"realme Pad Wi-Fi + 4G Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Grey)",
+        "actual_price":"29,99",
+        "discounted_price":"15,999",
+        "rating":4.8,
+        "total_rating":35
+    },
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667852910/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/239159_0_prllh8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Lenovo Smart Tab M10 Plus (2nd Gen) Wi-Fi + 4G Android Tablet (10.3 Inch, 4GB RAM, 128GB ROM, Iron Grey)",
+        "actual_price":"17,499",
+        "discounted_price":"36,000",
+        "rating":4.2,
+        "total_rating":36
+    }
+    
 ]
 }
 ]
