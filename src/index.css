@@ -3061,10 +3061,52 @@ font-size: 12px;
 }
 
 /*FaqSection */
+.faq__content__header{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  padding: 30px 35px;
+}
+
+.faq__grid{
+  padding: 0px 15px;
+}
+
+.faq__accordion{
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.faq__accordion__title{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: 0.25px;
+}
+
+.faq__accordion__title div:first-child{
+  max-width: 280px;
+}
+
+.faq__accordion__content{
+  font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+color: #6C6C6C;
+opacity: 0.8;
+margin-top: 10px;
+}
+
 @media screen and (min-width: 768px){
   .faq__section{
     max-width: 850px;
     margin: auto;
+  }
+  .faq__accordion__title div:first-child{
+    max-width: inherit;
   }
 
   .faq__content__header{
@@ -3091,6 +3133,7 @@ font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .faq__accordion__content{
@@ -3104,6 +3147,167 @@ font-size: 12px;
   }
 }
 
+/* RatingModal */
+.ratings__modal{
+  position: fixed;
+  inset: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 7;
+}
+
+.ratings__modal-content{
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 5%) 0px 4px 20px;
+  border-radius: 14px 14px 0px 0px;
+  width: 100vw;
+  opacity: 1;
+  padding: 8px;
+}
+
+.ratings__Inputstyles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.ratings__Inputstyles .input-label{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.380208px;
+  display: block;
+  margin-left: 8px;
+}
+
+.stars-wrap .ant-rate{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.stars-wrap .ant-rate .ant-rate-star{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    line-height: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.ratings__input-section{
+  margin-top: 24px;
+}
+
+.ratings__input-section .input-label{
+  font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.380208px;
+    display: block;
+    margin-left: 8px;
+}
+
+.ratings__input-section .input-section textarea{
+  resize: none;
+}
+
+.ratings__input-section .input-box {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color:#6C6C6C
+}
+
+.ratings__input-section .input-box::placeholder{
+  color:#6C6C6C
+}
+
+.ratings__buttons{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.ratings__cancel-btn,.ratings__save-btn{
+  background: #030303;
+    color: rgba(255,255,255,1);
+    flex: 1 1 0%;
+    border-radius: 16px;
+    padding: 14px 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    border: none;
+}
+
+.ratings__save-btn{
+  background: rgba(255,255,255,1);
+    color: #030303;
+    margin-left: 8px;
+    flex: 1 1 0%;
+    border: 1px solid #030303;
+}
+
+.ratings__modal-cls{
+  position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ratings__input-section .input-section .signUp__error-message{
+  margin-left: 10px;
+}
+
+@media (min-width: 768px){
+  .ratings__modal{
+    height: 100vh;
+    align-items: center;
+  }
+
+  .ratings__modal-content{
+    width: auto;
+    margin: 200px;
+    border-radius: 20px;
+  }
+
+  .ratings__modal-cls{
+    top: -58px;
+    left: unset;
+    transform: translateX(10%);
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+}
+
+.ratings__writeReviewstyles{
+  width: 360px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+}
 
 @media only screen and (max-width: 600px) {}
 

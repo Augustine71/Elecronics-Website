@@ -1,7 +1,16 @@
-import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 export const FaqSection = () => {
+  const [isOpen, setIsOpen] = useState(null);
+
+  const toggleAccordion = (i) => {
+    if (isOpen === i) {
+      return setIsOpen(null);
+    }
+    setIsOpen(i);
+  };
+
   const accordions = [
     {
       title: "How can I get a new screw or sizing piece?",
@@ -23,24 +32,27 @@ export const FaqSection = () => {
   return (
     <div class="faq__section">
       <div class="faq__content__header">
-        <div class="faq__content__heading">
-          Screws &amp; Belt Repair Questions
-        </div>
+        <div class="faq__content__heading">Frequently Asked Questions</div>
       </div>
       <div class="faq__grid">
         <div class="faq__grid__item">
           {accordions.map((accordion, index) => (
             <div class="faq__accordion" key={index}>
-              <div class="faq__accordion__title">
+              <div
+                class="faq__accordion__title"
+                onClick={() => toggleAccordion(index)}
+              >
                 <div>{accordion.title}</div>
                 <div>
-                  <IoIosArrowDown />
+                  {isOpen === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
               </div>
 
-              <div class="faq__accordion__content">
-                <p>{accordion.content}</p>
-              </div>
+              {isOpen === index && (
+                <div class="faq__accordion__content">
+                  <p>{accordion.content}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>

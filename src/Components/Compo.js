@@ -1,10 +1,10 @@
 import React from "react";
-import { FaqSection } from "./FaqSection";
+import { RatingModal } from "./RatingModal";
 
 export const Compo = () => {
   return (
     <>
-      <FaqSection />
+      <RatingModal />
     </>
   );
 };
