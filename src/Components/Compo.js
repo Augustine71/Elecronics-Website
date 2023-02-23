@@ -1,10 +1,10 @@
 import React from "react";
-import { HomePageCategory } from "./HomePageCategory";
+import { FaqSection } from "./FaqSection";
 
 export const Compo = () => {
   return (
     <>
-      <HomePageCategory />
+      <FaqSection />
     </>
   );
 };
