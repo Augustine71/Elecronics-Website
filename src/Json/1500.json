@@ -1,0 +1,100 @@
+{
+    "name":"Apple iPhone 14 Pro Max (256GB, Deep Purple)",
+    "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "actual_price":"149,900",
+    "disc_price":"144,990",
+    "prod_desc":[
+        "An innovative 48MP camera for mind-blowing detail.",
+        "Crash detection, a vital safety feature designed to save lives.",
+        "Designed for durability with Ceramic Shield, tougher than any smartphone glass.",
+        "Dynamic island is a magical new way to interact with your iPhone.",
+        "Up to 4x the resolution for jaw-dropping cropping.",
+        "Long-lasting battery up to 29 hours on video playback"
+    ],
+    "imgs":[
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_11"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663177008/Croma%20Assets/Communication/Mobiles/Images/261991_2_o2tjlp.jpg/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_2"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703400/Croma%20Assets/Communication/Mobiles/Images/261991_4_dp8elq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_3"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703400/Croma%20Assets/Communication/Mobiles/Images/261991_4_dp8elq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_4"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703394/Croma%20Assets/Communication/Mobiles/Images/261991_8_kk810c.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_5"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703413/Croma%20Assets/Communication/Mobiles/Images/261991_9_mkk6d9.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_6"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703413/Croma%20Assets/Communication/Mobiles/Images/261991_10_wcdb1t.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_7"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703412/Croma%20Assets/Communication/Mobiles/Images/261991_11_cimxzh.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_8"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703409/Croma%20Assets/Communication/Mobiles/Images/261991_14_c2sbdr.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_9"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703413/Croma%20Assets/Communication/Mobiles/Images/261991_15_tqnyub.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Apple iPhone 14 Pro Max (256GB, Deep Purple)_10"
+        }
+    ],
+    "features":[
+        {
+            "title":"Display",
+            "desc":"6.7 inches (17.00 cm) OLED Display"
+        },
+        {
+            "title":"Memory",
+            "desc":"256GB ROM"
+        },
+        {
+            "title":"Processor",
+            "desc":"A16 Bionic Chip, Hexa Core"
+        },
+        {
+            "title":"Camera",
+            "desc":"48 MP + 12 MP + 12 MP Triple Rear & 12 MP Front Camera"
+        },
+        {
+            "title":"Battery",
+            "desc":"Qi Wireless Charging Up to 7.5W"
+        },
+        {
+            "title":"Security (Lock)",
+            "desc":"Facial Lock"
+        }
+    ],
+    "faqs":[
+        {
+            "que":"Is it easy to transfer my data and set up my new iPhone?",
+            "ans":"iPhone models currently sold on apple.com work with compatible networks around the world, including 5G and 4G LTE networks. Check with your home network provider regarding international roaming charges, or purchase a compatible nano-SIM at your destination."
+        },
+        {
+            "que":"Which network providers offer 5G service?",
+            "ans":"iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max, iPhone 13 Pro, iPhone 13 Pro Max, iPhone 13, iPhone 13 mini, iPhone 12 and iPhone 12 mini are 5G capable. For 5G access, you need to activate your iPhone with a network provider that offers 5G service. Some providers may also require a 5G service plan or a new SIM. Contact your provider for more information. Learn more about network providers in your country "
+        },
+        {
+            "que":"What are my delivery options, and when will I get my items?",
+            "ans":"Delivery estimates are based on item availability and the shipping option you choose. You’ll get a final delivery date after you place your order.Free next-day delivery is available for any in-stock items and free standard delivery on all orders."
+        },
+        {
+            "que":"How many hours iPhone 14 Pro Max Battery last?",
+            "ans":"Usage time for iPhone 14 Pro Max was 11 hours 44 minutes active with 16 hours standby for a total of 27 hours and 44 minutes"
+        }
+    ]
+}

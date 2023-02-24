@@ -1,10 +1,16 @@
 import React from "react";
-import { RatingModal } from "./RatingModal";
+import { HomePageCategory } from "./HomePageCategory";
+import { Footer } from "./Footer";
+import { Slick } from "./Slick";
+import { DeliveryInstructions } from "./DeliveryInstructions";
 
 export const Compo = () => {
   return (
     <>
-      <RatingModal />
+      <HomePageCategory />
+      <Slick />
+      <DeliveryInstructions />
+      <Footer />
     </>
   );
 };

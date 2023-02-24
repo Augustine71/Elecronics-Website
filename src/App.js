@@ -7,9 +7,11 @@ import { NotFound } from "./Components/NotFound";
 import { Cart } from "./Components/Cart";
 import { AllProducts } from "./Components/AllProducts";
 import { MyOrders } from "./Components/MyOrders";
+import { ProductDisplayPage } from "./Components/ProductDisplayPage";
 import { OrderDetails } from "./Components/OrderDetails";
 import { LogInModal } from "./Components/LogInModal";
 import { SignUpNModal } from "./Components/SignUpModal";
+import { RatingModal } from "./Components/RatingModal";
 
 import { ModalProvider } from "./Components/ModalContext";
 
@@ -49,9 +51,11 @@ export const App = () => {
           <Route path="/all-products" element={<AllProducts />} />
           <Route path="/compcheck" element={<Compo />} />
           <Route path="/*" element={<NotFound />} />
+          <Route path="/dp/:productId" element={<ProductDisplayPage />} />
         </Routes>
         <LogInModal />
         <SignUpNModal />
+        <RatingModal />
       </ModalProvider>
     </BrowserRouter>
   );

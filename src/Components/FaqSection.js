@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-export const FaqSection = () => {
+export const FaqSection = (props) => {
   const [isOpen, setIsOpen] = useState(null);
 
   const toggleAccordion = (i) => {
@@ -36,13 +36,13 @@ export const FaqSection = () => {
       </div>
       <div class="faq__grid">
         <div class="faq__grid__item">
-          {accordions.map((accordion, index) => (
+          {props.questions.map((faq, index) => (
             <div class="faq__accordion" key={index}>
               <div
                 class="faq__accordion__title"
                 onClick={() => toggleAccordion(index)}
               >
-                <div>{accordion.title}</div>
+                <div>{faq.que}</div>
                 <div>
                   {isOpen === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
@@ -50,7 +50,7 @@ export const FaqSection = () => {
 
               {isOpen === index && (
                 <div class="faq__accordion__content">
-                  <p>{accordion.content}</p>
+                  <p>{faq.ans}</p>
                 </div>
               )}
             </div>

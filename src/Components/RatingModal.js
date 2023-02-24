@@ -68,9 +68,12 @@ export const RatingModal = () => {
     <div
       className="ratings__modal"
       onClick={toggleModalRating}
-      style={{ display: signUpModalIsOpen ? "block" : "none" }}
+      style={{ display: ratingModalIsOpen ? "flex" : "none" }}
     >
-      <div className="ratings__modal-content">
+      <div
+        className="ratings__modal-content"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="ratings__modal-cls">
           <AiFillCloseCircle
             size={35}

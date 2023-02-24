@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Rate } from "antd";
 
+import { ModalContext } from "./ModalContext";
+
 export const RatingComponent = () => {
+  const { toggleModalRating } = useContext(ModalContext);
+
   return (
     <div className="ratings__main-container">
       <h2 class="rating__header-component">Ratings &amp; Reviews</h2>
@@ -63,6 +67,9 @@ export const RatingComponent = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="ratings__write-a-review" onClick={toggleModalRating}>
+        Write a Review
       </div>
     </div>
   );
