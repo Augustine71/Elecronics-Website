@@ -2747,7 +2747,7 @@ color: rgba(0, 0, 0, 0.2);
   line-height: 20px;
   font-size: 14px;
   color: #3b3b3b;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .pdp__section{
@@ -2769,7 +2769,7 @@ color: rgba(0, 0, 0, 0.2);
 
 .pdp__classification .pdp__classificationValue {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 22px;
 }
 
@@ -2903,7 +2903,7 @@ font-size: 12px;
 
 .rating__header-component{
   text-align: center;
-  font-weight: 400;    
+  font-weight: 500;    
   font-size: 24px;
   line-height: 28px;
   
@@ -2968,14 +2968,13 @@ font-size: 12px;
 
 .mob__title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 12px;
 }
 
 .review__body {
-  margin-top: 4px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
 }
 
@@ -3014,10 +3013,14 @@ font-size: 12px;
 .ratings-and-reviews__author {
   font-size: min(16px, 12px + 4 * ((100vw - 360px) / 1080));
   line-height: min(22px, 16px + 6 * ((100vw - 360px) / 1080));
-  font-weight: 900;
+  font-weight:400;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
+  gap: 2px;
+}
+
+.ratings-and-reviews__author img{
+  width: 12px;
 }
 
 .ratings-and-reviews__date {
@@ -3089,7 +3092,7 @@ font-size: 12px;
 
 /*FaqSection */
 .faq__content__header{
-  font-weight: 700;
+  font-weight: 600;
   font-size: 36px;
   line-height: 100%;
   text-align: center;
@@ -3108,7 +3111,7 @@ font-size: 12px;
 .faq__accordion__title{
   display: flex;
   justify-content: space-between;
-  font-weight: 600;
+  font-weight: 400;
 font-size: 16px;
 line-height: 120%;
 letter-spacing: 0.25px;
