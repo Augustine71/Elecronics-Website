@@ -27,6 +27,7 @@
     "react-icons": "^4.7.1",
     "react-icons-kit": "^2.0.0",
     "react-multi-carousel": "^2.8.2",
+    "react-responsive": "^9.0.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",

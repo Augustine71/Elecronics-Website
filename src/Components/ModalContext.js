@@ -1,9 +1,11 @@
 import React, { createContext, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 export const ModalContext = createContext({
   logInModalIsOpen: false,
   signUpModalIsOpen: false,
   ratingModalIsOpen: false,
+  isSmallScreen: false,
   toggleModalLogIn: () => {},
   toggleModalSignUp: () => {},
   toggleModalRating: () => {},
@@ -26,12 +28,15 @@ export const ModalProvider = ({ children }) => {
     setRatingModalIsOpen(!ratingModalIsOpen);
   };
 
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
+
   return (
     <ModalContext.Provider
       value={{
         logInModalIsOpen,
         signUpModalIsOpen,
         ratingModalIsOpen,
+        isSmallScreen,
         toggleModalLogIn,
         toggleModalSignUp,
         toggleModalRating,

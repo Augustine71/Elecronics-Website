@@ -9,7 +9,7 @@ export const PdpSectionButtons = (props) => {
           props.activeSection === "desc" ? "active" : ""
         }`}
       >
-        Description
+        Overview
       </div>
       <div
         onClick={() => props.changeSection("details")}

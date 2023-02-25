@@ -3,7 +3,11 @@
     "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
     "actual_price":"149,900",
     "disc_price":"144,990",
-    "prod_desc":[
+    "rating":4.5,
+    "total_ratings":12,
+    "prod_desc":{
+        "heading":"Why Buy Apple iPhone 14 Pro Max",
+        "features":[
         "An innovative 48MP camera for mind-blowing detail.",
         "Crash detection, a vital safety feature designed to save lives.",
         "Designed for durability with Ceramic Shield, tougher than any smartphone glass.",
@@ -11,6 +15,11 @@
         "Up to 4x the resolution for jaw-dropping cropping.",
         "Long-lasting battery up to 29 hours on video playback"
     ],
+    "sub_features":[
+"Explore the magical future of smartphones when you buy the Apple iPhone 14 Pro Max. The name says it all. Experience a magical way to interact with iPhone. It's the Pro and beyond. Designed for durability it comes embraced with Ceramic Shield, which is tougher than any smartphone glass. See things big with its dynamic 6.7-inch display that comes in variants of colors to choose from. Meet the new face of the iPhone with the dynamic island, a truly Apple innovation that is hardware and software — and something in between. It bubbles up music, FaceTime and so much more all without taking you away from what you're doing. It blends fun and function like never before, consolidating your notifications, alerts, and activities into one interactive place. It's integrated throughout iOS 16 and can work with all kinds of apps to seamlessly surface what you need, right when you need it. This is the biggest change to the face of the iPhone since it went all screens. Its always-on display makes your lock screen glanceable, so you don't even have to tap it to stay in the know. Customize your lock screen with the best widgets and fonts as the iOS 16 lets you customize your lock screen in fun new ways. Get all you need while your phone is locked, from tracking your activity rings to seeing live updates of your favorite apps. Add your best-clicked photo to your lock screen to make it pop! For those bright, sunny days, the Super Retina XDR display now reaches a peak of 2,000 nits outdoors that's twice as bright as before and the highest peak brightness of any smartphone. So, the text jumps right off the screen. Introducing you the Crash Detection. It's the most useful feature to send help when in need. iPhone 14 Pro Max can detect a severe car crash and can call emergency services and notify your emergency contacts. With the pro get the pro camera system get massively pro. The all-new 48MP Main camera with an advanced quad-pixel sensor. Get ready to up your picture game. iPhone 14 Pro Max raises the bar for what 48 megapixels can do — delivering 4x the resolution in ProRAW for mind-blowing detail in every crop.",
+"Additionally, the Apple iPhone 14 Pro Max price is a steal deal. The new Pro camera system adds a 2x optical quality telephoto to its zoom range, putting tons of framing flexibility in your pockets. Get much more detail in much less light, up to 3x better low-light photos on the ultra-wide camera, up to 2x low-light photos on the main camera, and up to 2x better low-light photos on the telephoto camera. Shoot the best videos in a cinematic mode in 4K HDR at 24 fps the film industry standard. Get the highest quality video in a smartphone. This is the only smartphone in the world that lets you shoot, view, edit, and share in ProRes or Dolby Vision HDR. Feel premium. Also, snap your sharpest, most colorful close-ups and group shots, thanks to a new TrueDepth front camera with autofocus and a larger aperture. It comes with A16 Bionic, which is the mastermind behind all. And not to forget its long battery life, that is all in, all day. Even with soooooo many new capabilities, iPhone 14 Pro Max still delivers amazing all-day battery life. Isn't that awesome? Enjoy 6G connectivity and dual sim support (nano-SIM and eSIM). It sails through spills as it is water resistant so that the clumsy you won't regret accidentally spilling your beverages on it.  So, what are you waiting for? Get the Apple iPhone 14 Pro Max online before it is too late."
+    ]
+},
     "imgs":[
         {
             "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
@@ -90,7 +99,7 @@
         },
         {
             "que":"What are my delivery options, and when will I get my items?",
-            "ans":"Delivery estimates are based on item availability and the shipping option you choose. You’ll get a final delivery date after you place your order.Free next-day delivery is available for any in-stock items and free standard delivery on all orders."
+            "ans":"Delivery estimates are based on item availability and the shipping option you choose. You'll get a final delivery date after you place your order.Free next-day delivery is available for any in-stock items and free standard delivery on all orders."
         },
         {
             "que":"How many hours iPhone 14 Pro Max Battery last?",

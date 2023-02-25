@@ -1,31 +1,46 @@
-import React from "react";
+import React, { useContext } from "react";
 import { MobileImageGallery } from "./MobileImageGallery";
+import { CustomImageSlider } from "./CustomImageSlider";
 import { PdpDetails } from "./PdpDetails";
 import { FaqSection } from "./FaqSection";
 import { CustomHomeCard } from "./CustomHomeCard";
 import { PdpDescription } from "./PdpDescription";
+import { PdpOverview } from "./PdpOverview";
 
 import { NavigationBar } from "./NavigationBar";
 import { RatingComponent } from "./RatingComponent";
-import Slider from "react-slick";
 
 import homeProducts from "../Json/homeProducts.json";
 
+import { ModalContext } from "./ModalContext";
+
 export const PdpFirstFold = (props) => {
+  const { isSmallScreen } = useContext(ModalContext);
   const { json } = props;
 
   return (
     <>
       <NavigationBar />
       <div className="pdp__content-together">
-        <MobileImageGallery imgs={json.imgs} />
+        {isSmallScreen ? (
+          <MobileImageGallery imgs={json.imgs} />
+        ) : (
+          <CustomImageSlider imgs={json.imgs} />
+        )}
         <PdpDetails
           name={json.name}
           actualPrice={json.actual_price}
           discountedPrice={json.disc_price}
+          rating={json.rating}
+          total_ratings={json.total_ratings}
+          screenWidth={isSmallScreen}
         />
       </div>
-      <PdpDescription desc={json.prod_desc} features={json.features} />
+      {isSmallScreen ? (
+        <PdpDescription desc={json.prod_desc} features={json.features} />
+      ) : (
+        <PdpOverview data={json.prod_desc} />
+      )}
       <RatingComponent />
       <div class="homePageCategory__productListingWrapper">
         <div class="homePageCategory__products-container">
