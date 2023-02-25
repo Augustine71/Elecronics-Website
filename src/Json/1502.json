@@ -1,0 +1,95 @@
+{
+    "name":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)",
+    "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347118/Croma%20Assets/Communication/Mobiles/Images/268878_dygou8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "prod_cat":"mb",
+    "actual_price":"94,999",
+    "disc_price":"115,999",
+    "rating":4.9,
+    "total_ratings":32,
+    "prod_desc":{
+        "heading":"Why Buy Samsung Galaxy S23 Plus 5G",
+        "features":[
+        "256GB Storage lets you store your files with ease",
+        "One UI maximizes versatility by giving you the option to customize almost every element",
+        "Snapdragon 8 Gen 2 Processor with 5G connection enables smooth responsiveness"
+    ],
+    "sub_features":[
+        "Enhance your entertainment expedition with the SAMSUNG Galaxy S23 Plus 5G, which has a powerful battery. Dynamic AMOLED 2X delivers clear, colourful details onscreen, whether dimmed down low or full-blast brightness and 120Hz technology intelligently optimize the refresh rate to smooth out the action and save on battery. With just a fast Wi-Fi transfer or a quick login to your Samsung Account, you are ready to go. Even fewer steps are required to move your programs, photographs, messages, and more from any OS to your new phone.",
+        "The cost of the SAMSUNG Galaxy S23 Plus 5G is sufficiently affordable to meet your budget. Start on your phone and move as your ideas grow. With continuity across Galaxy devices, you can stick to a single mouse, keyboard, or touchpad to easily drop text and images to your PC, then go back to the phone when it's time to run. Now it's easier than ever to set your phone up just for you. One UI maximizes customization, allowing you to pick almost every detail, from lock screens and themes to widgets and notifications. So why delay any longer? Grab the SAMSUNG Galaxy S23 Plus 5G online, right now!"
+    ]
+},
+    "imgs":[
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347118/Croma%20Assets/Communication/Mobiles/Images/268878_dygou8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-1"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675406669/Croma%20Assets/Communication/Mobiles/Images/268878_1_huphgh.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-2"
+        }, 
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675406667/Croma%20Assets/Communication/Mobiles/Images/268878_2_vjzqbg.jpg/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-3"
+        },
+         {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675609907/Croma%20Assets/Communication/Mobiles/Images/268878_5_aqxiif.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-4"
+        }, 
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347119/Croma%20Assets/Communication/Mobiles/Images/268878_9_rtrhqx.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-5"
+        }, 
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347121/Croma%20Assets/Communication/Mobiles/Images/268878_10_m5vkww.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-6"
+        }, 
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347124/Croma%20Assets/Communication/Mobiles/Images/268878_11_tnztvt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "alt":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)-7"
+        }
+    ],
+    "features":[
+        {
+            "title":"Display",
+            "desc":"6.6 inches (16.76 cm), Flat FHD+, 120 Hz Refresh Rate"
+        },
+        {
+            "title":"Memory",
+            "desc":"8GB RAM, 256GB ROM"
+        },
+        {
+            "title":"Processor",
+            "desc":"Qualcomm Snapdragon 8 Gen 2, Octa-Core"
+        },
+        {
+            "title":"Camera",
+            "desc":"50MP + 10MP + 12MP Triple Rear & 12MP Front Camera"
+        },
+        {
+            "title":"Battery",
+            "desc":"4700mAh"
+        },
+        {
+            "title":"Security (Lock)",
+            "desc":"Fingerprint Sensor"
+        }
+    ],
+    "faqs":[
+        {
+            "que":"What is unique about Samsung phones?",
+            "ans":"Galaxy devices leverage crisp, expansive screens to give users a variety of options for working across multiple apps. Samsung smartphones have featured Multi Window mode as far back as 2012's Galaxy Note II, and each subsequent generation has further refined the multitasking experience"
+        },
+        {
+            "que":"Why are Samsung phones better than other brands?",
+            "ans":"Samsung has the most expansive customer support and repair service network among all other Android OEMs. It also offers some of the best trade-in values in the mobile industry, allowing many of us to upgrade to newer devices more often than we would if choosing a different brand"
+        },
+        {
+            "que":"Can I upgrade any Samsung Mobile Device?",
+            "ans":"No. You must purchase an eligible Samsung smartphone device and opt-in to the Samsung Upgrade Program at checkout using an approved Samsung Financing Account."
+        },
+        {
+            "que":"How many years can a Samsung last?",
+            "ans":"The lifetime of smartphones like Samsung and iPhone is much longer than smaller brands. Here is a breakdown of the average mobile life according to the different brands: iPhone - four to eight years. Samsung - three to six years."
+        }
+    ]
+}
