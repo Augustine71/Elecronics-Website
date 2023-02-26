@@ -10,8 +10,8 @@
         "name":"ASUS TUF Gaming A17 FA706IC-HX036W AMD Ryzen 7 (17.3 inch, 8GB, 512GB, Windows 11 Home, NVIDIA GeForce RTX 3050, FHD IPS Display, Graphite Black, 90NR0675-M002F0)",
         "actual_price":"94,900",
         "discounted_price":"67,990",
-        "rating":4.5,
-        "total_rating":4
+        "rating":5,
+        "total_rating":5
     },
     {
         "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663350670/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245235_0_lkhkv1.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
@@ -19,13 +19,13 @@
         "actual_price":"2,39,900",
         "discounted_price":"2,19,900",
         "rating":4,
-        "total_rating":3
+        "total_rating":1
     },
     {
         "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1669811984/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257099_thydyu.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
-        "name":"HP Spectre f1009TX Core i7 12th Gen Intel Evo Windows 11 Home 2-in-1 Laptop (16GB RAM, 1TB SSD, Intel Arc A370M + 4 GB GDDR6, MS Office, 40.6cm, 6J2T82PA#ACJ, Nocturne Blue)",
-        "actual_price":"1,93,150",
-        "discounted_price":"1,78,000",
+        "name":"HP x360 14a-cb0007AU Chromebook AMD 3015Ce (4GB, 64GB, Chrome OS, 14 inch, Silver, 4X3G1PA#ACJ)",
+        "actual_price":"36,358",
+        "discounted_price":"27,994",
         "rating":4.2,
         "total_rating":5
     },
