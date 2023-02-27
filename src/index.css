@@ -894,30 +894,61 @@ margin-right: 4px;
 }
 
 /* Order Card */
-.order__card{
-  width: 340px;
-    margin-top: 0px;
-    padding: 8px 15px;
-    border-radius: 8px;
-    font-size: 14px;
-    box-shadow: 0px 4px 17.1px 0.9px rgb(35 31 32 / 28%);
-    height: fit-content;
-    flex: 0 0 auto;
-    margin-bottom: 20px;
+.order__card_together{
+  margin-top: -80px;
 }
 
-.order__number{
+.order__card{
+  width: 330px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 5%);
+    border-radius: 20px;
+    padding: 16px;
+    height: fit-content;
+    margin-bottom: 12px;
+}
+
+.order__qty div:first-child,
+.order__number div:first-child,
+.order__amt div:first-child,
+.order__date div:first-child,
+.order__expected-date div:first-child{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #030303;
+
+opacity: 0.6;
+}
+
+.order__qty div:nth-child(2),
+.order__number div:nth-child(2),
+.order__amt div:nth-child(2),
+.order__date div:nth-child(2),
+.order__expected-date div:nth-child(2){
+  font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: #030303;
+}
+
+.order__together *{
+  flex-basis: 100%;
+}
+
+.order__number div:nth-child(2){
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 150px;
+  width: 80px;
 }
 
 .order__together{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .order__together:first-of-type{
@@ -932,19 +963,50 @@ margin-right: 4px;
   color: #A8A8A8;
 }
 
-.order__status.delivered{
-  color: rgb(66, 182, 130);
+.order__status{
+  
+    width: min-content;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.16em;
+    
+    padding: 6px 8px;
+    
+    border-radius: 6px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.order__status.shipped{
+  background: rgba(55, 159, 142, 0.1);
+  border: 1px solid #379F8E;
+  color: #379F8E;
+}
+
+.order__status.on-hold{
+  background: rgba(232, 102, 105, 0.1);
+  border: 1px solid #E86669;
+  color: #E86669;
+}
+
+.order__status.processing{
+  background: rgba(34, 84, 138, 0.1);
+  border: 1px solid #22548A;
+  color: #22548A;
 }
 
 .order__details__btn{
   display: block;
-    padding: 5px 10px;
-    border: 1px solid #aaaaaa;
-    border-radius: 12px;
+    border-radius: 10px;
     font-weight: 600;
-    width: 90px;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 12px;
+    background: #22548A;
     text-align: center;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 /* My orders*/
@@ -969,30 +1031,71 @@ margin-right: 4px;
   margin-bottom: 30px;
 }
 
-@media (min-width: 576px){
-  .myorders__body {
-      max-width: 540px;
-  }
-  }
+.myorders__banner{
+  text-align: center;
+  background: #E1EFF8;
+  padding-top: 40px;
+  width: 100%;
+height: 190px;
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+color: #030303;
+}
 
   @media (min-width: 768px){
-    .myorders__body {
-        max-width: 720px;
-    }
-    
+    .myorders__banner{
+      font-size: 36px;
+      line-height: 36px;
+      height: 240px;
+      padding-top: 80px;
+    }  
+
+    .order__card{
+      width: 745px;
+      padding: 30px;
+      box-shadow: 0px 4px 10px rgb(0 0 0 / 5%);
+      border-radius: 20px;
+      margin-bottom: 20px;
     }
 
-@media (min-width: 992px){
-.myorders__body {
-    max-width: 960px;
+    .order__qty div:first-child,
+.order__number div:first-child,
+.order__amt div:first-child,
+.order__date div:first-child,
+.order__expected-date div:first-child{
+  font-size: 18px;
+line-height: 18px;
 }
+
+.order__qty div:nth-child(2),
+.order__number div:nth-child(2),
+.order__amt div:nth-child(2),
+.order__date div:nth-child(2),
+.order__expected-date div:nth-child(2){
+  font-size: 20px;
+  line-height: 120%;
 }
+
+.order__details__btn{
+  padding: 17px 35px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 16px;
+}
+
+.order__status{
+  letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 140px;
+}
+    }
+
 
 @media (min-width: 768px) and (max-width: 1024px)
 {
-.myorders__body {
-    padding: 0 15px !important;
-}
 
 .contactus__header{
   font-size: 24px;
@@ -1009,10 +1112,6 @@ margin-right: 4px;
 }
 
 @media only screen and (max-width: 767px) {
-.order__card_together{
-  order: 1;
-    margin: auto;
-}
 
 .myorders__heading{
   margin-top: 15px;
@@ -3778,6 +3877,7 @@ margin-bottom: 30px;
 .pdp-keyfeature ul li{
   margin-bottom: 10px;
 }
+
 
 
 @media only screen and (max-width: 600px) {}
