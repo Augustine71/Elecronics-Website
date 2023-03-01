@@ -18,7 +18,7 @@
     "cors": "^2.8.5",
     "embla-carousel-react": "^7.0.9",
     "express": "^4.18.1",
-    "firebase": "^9.9.4",
+    "firebase": "^9.17.1",
     "paytmchecksum": "^1.5.0",
     "razorpay": "^2.8.3",
     "react": "^18.2.0",
