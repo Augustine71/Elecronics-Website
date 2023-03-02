@@ -117,7 +117,7 @@ export const SignUpNModal = () => {
         setIsButtonDisabled(false);
         setFirstImeUser(false);
         toggleModalSignUp();
-        navigate("/home");
+        navigate("/");
         toast.success("You have been logged in successfully", {
           position: "top-right",
           autoClose: 5000,
@@ -133,6 +133,7 @@ export const SignUpNModal = () => {
       .catch((error) => {
         // User couldn't sign in (bad verification code?)
         // ...
+        setOtpValid(true);
         console.log("Phone Number failure");
       });
   };
@@ -153,10 +154,6 @@ export const SignUpNModal = () => {
   const handleOtp = (e) => {
     let otp = e.target.value;
     setOTP(otp);
-    if (otp.length === 6) {
-      setOtpValid(true);
-    }
-    setIsOtpTouched(true);
   };
 
   const validateEmail = (email) => {
@@ -190,7 +187,7 @@ export const SignUpNModal = () => {
   return (
     <div
       className="signUp__modal"
-      style={{ display: signUpModalIsOpen ? "none" : "block" }}
+      style={{ display: signUpModalIsOpen ? "block" : "none" }}
       onClick={toggleModalSignUp}
     >
       <div id="recaptcha-container"></div>

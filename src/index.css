@@ -2750,6 +2750,11 @@ form:invalid + .signUp__error-message {
     cursor: pointer;
 }
 
+.phone__number-submit-button:disabled{
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
 .phone__number-submit-button.active{
   opacity: 0.2;
   pointer-events: none;

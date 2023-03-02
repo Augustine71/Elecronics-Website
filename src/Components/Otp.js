@@ -16,21 +16,20 @@ export const Otp = (props) => {
         onChange={props.handleOtp}
       ></input>
 
-      {!props.otpValid && props.isOtpTouched && (
+      {props.otpValid && (
         <div class="phone__number-form_error_message">Incorrect OTP</div>
       )}
       <span class="phone__number-form_message form_opacity">
         Didn't receive OTP?
       </span>
       <button class="phone__number-form-resend">Resend </button>
-      <div
-        class={`phone__number-submit-button ${
-          !props.otpValid === true ? "active" : ""
-        }`}
+      <button
+        class="phone__number-submit-button"
         onClick={props.VerifyOTP}
+        disabled={props.OTP.length < 6}
       >
         Submit
-      </div>
+      </button>
     </div>
   );
 };
