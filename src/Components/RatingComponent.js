@@ -16,7 +16,7 @@ export const RatingComponent = () => {
               <div class="rating__container">
                 <span class="number">4.4</span>
                 <div class="rating__styledWrapper">
-                  <Rate allowHalf defaultValue={2.5} />
+                  <Rate allowHalf defaultValue={4.5} />
                 </div>
               </div>
               <div class="rating__total-reviews">

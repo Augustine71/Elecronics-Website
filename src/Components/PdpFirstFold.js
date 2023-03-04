@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { MobileImageGallery } from "./MobileImageGallery";
 import { CustomImageSlider } from "./CustomImageSlider";
 import { PdpDetails } from "./PdpDetails";
@@ -6,6 +6,7 @@ import { FaqSection } from "./FaqSection";
 import { CustomHomeCard } from "./CustomHomeCard";
 import { PdpDescription } from "./PdpDescription";
 import { PdpOverview } from "./PdpOverview";
+import { PdpPopUp } from "./PdpPopUp";
 
 import { NavigationBar } from "./NavigationBar";
 import { RatingComponent } from "./RatingComponent";
@@ -18,6 +19,11 @@ export const PdpFirstFold = (props) => {
   const { isSmallScreen } = useContext(ModalContext);
   const { json } = props;
 
+  const [openPopUp, setOpenPopUp] = useState({
+    text: "",
+    icon: null,
+  });
+
   return (
     <>
       <NavigationBar />
@@ -27,14 +33,8 @@ export const PdpFirstFold = (props) => {
         ) : (
           <CustomImageSlider imgs={json.imgs} />
         )}
-        <PdpDetails
-          name={json.name}
-          actualPrice={json.actual_price}
-          discountedPrice={json.disc_price}
-          rating={json.rating}
-          total_ratings={json.total_ratings}
-          screenWidth={isSmallScreen}
-        />
+        <PdpPopUp setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
+        <PdpDetails json={json} setOpenPopUp={setOpenPopUp} />
       </div>
       {isSmallScreen ? (
         <PdpDescription desc={json.prod_desc} features={json.features} />

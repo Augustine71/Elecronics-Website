@@ -1,5 +1,6 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import { auth } from "../Config/Config";
 
 export const ModalContext = createContext({
   logInModalIsOpen: false,
@@ -9,12 +10,14 @@ export const ModalContext = createContext({
   toggleModalLogIn: () => {},
   toggleModalSignUp: () => {},
   toggleModalRating: () => {},
+  user: null,
 });
 
 export const ModalProvider = ({ children }) => {
   const [logInModalIsOpen, setLogInModalIsOpen] = useState(false);
   const [signUpModalIsOpen, setSignUpModalIsOpen] = useState(false);
   const [ratingModalIsOpen, setRatingModalIsOpen] = useState(false);
+  const [user, setUser] = useState(null);
 
   const toggleModalLogIn = () => {
     setLogInModalIsOpen(!logInModalIsOpen);
@@ -30,6 +33,14 @@ export const ModalProvider = ({ children }) => {
 
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((firebaseUser) => {
+      setUser(firebaseUser);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   return (
     <ModalContext.Provider
       value={{
@@ -40,6 +51,7 @@ export const ModalProvider = ({ children }) => {
         toggleModalLogIn,
         toggleModalSignUp,
         toggleModalRating,
+        user,
       }}
     >
       {children}

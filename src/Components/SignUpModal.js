@@ -29,8 +29,7 @@ export const SignUpNModal = () => {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [firstTimeUser, setFirstImeUser] = useState(false);
 
-  const { signUpModalIsOpen, toggleModalSignUp, toggleModalLogIn } =
-    useContext(ModalContext);
+  const { signUpModalIsOpen, toggleModalSignUp } = useContext(ModalContext);
 
   const generateReCaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(

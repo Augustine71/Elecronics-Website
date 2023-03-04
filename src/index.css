@@ -3,7 +3,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .wrapper{
@@ -2519,7 +2519,7 @@ line-height: 19px;
 .signUp__modal {
  
   position: fixed;
-  z-index: 1;
+  z-index: 10000000;
   left: 0;
   top: 0;
   width: 100%;
@@ -4332,7 +4332,40 @@ margin-bottom: 30px;
   margin-bottom: 10px;
 }
 
+/* PdpPopUp */
+.pdp_popup {
+  position: absolute;
+  bottom: -50px;
+  background-color: #fff;
+  text-align: center;
+  transition: bottom 0.2s ease-in-out;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 12px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
 
+.pdp_popup.show {
+  bottom: 20px;
+  
+  background: rgba(0,175,147,1);
+}
+
+.pdp__content-together {
+  position: relative;
+}
+
+.green-check{
+  background-color: rgba(0,175,147,1);
+  color: rgba(255,237,108,1);
+  margin-right: 8px;
+    font-size: 20px;
+}
 
 @media only screen and (max-width: 600px) {}
 
