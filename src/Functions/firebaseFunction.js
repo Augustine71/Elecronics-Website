@@ -6,6 +6,11 @@ function firebaseFunction(product, cartRef, popUp, type, navigate) {
   Product["qty"] = 1;
   Product["TotalProductPrice"] =
     Product.qty * parseInt(Product.disc_price.replace(/,/g, ""), 10);
+  Product["SuTotal"] =
+    Product.qty * parseInt(Product.actual_price.replace(/,/g, ""), 10);
+  Product["Discount"] =
+    Product.qty * parseInt(Product.actual_price.replace(/,/g, ""), 10) -
+    Product.qty * parseInt(Product.disc_price.replace(/,/g, ""), 10);
   cartRef
     .set(Product)
     .then(() => {

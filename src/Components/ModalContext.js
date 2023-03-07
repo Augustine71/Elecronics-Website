@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
-import { auth } from "../Config/Config";
+import { auth, fs } from "../Config/Config";
 
 export const ModalContext = createContext({
   logInModalIsOpen: false,
@@ -11,6 +11,7 @@ export const ModalContext = createContext({
   toggleModalSignUp: () => {},
   toggleModalRating: () => {},
   user: null,
+  totalProducts: 0,
 });
 
 export const ModalProvider = ({ children }) => {
@@ -18,6 +19,7 @@ export const ModalProvider = ({ children }) => {
   const [signUpModalIsOpen, setSignUpModalIsOpen] = useState(false);
   const [ratingModalIsOpen, setRatingModalIsOpen] = useState(false);
   const [user, setUser] = useState(null);
+  const [totalProducts, setTotalProducts] = useState(0);
 
   const toggleModalLogIn = () => {
     setLogInModalIsOpen(!logInModalIsOpen);
@@ -34,8 +36,14 @@ export const ModalProvider = ({ children }) => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((firebaseUser) => {
-      setUser(firebaseUser);
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        fs.collection("Cart " + user.phoneNumber).onSnapshot((snapshot) => {
+          const qty = snapshot.docs.length;
+          setTotalProducts(qty);
+        });
+      }
+      setUser(user);
     });
 
     return () => unsubscribe();
@@ -52,6 +60,7 @@ export const ModalProvider = ({ children }) => {
         toggleModalSignUp,
         toggleModalRating,
         user,
+        totalProducts,
       }}
     >
       {children}

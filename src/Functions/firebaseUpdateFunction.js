@@ -4,8 +4,18 @@ function firebaseUpdateFunction(product, cartRef, doc, popUp, type, navigate) {
   const currentQty = doc.data().qty;
   const newQty = currentQty + 1;
   const newPrice = newQty * parseInt(product.disc_price.replace(/,/g, ""), 10);
+  const subTotal =
+    newQty * parseInt(product.actual_price.replace(/,/g, ""), 10);
+  const newDiscount =
+    newQty * parseInt(product.actual_price.replace(/,/g, ""), 10) -
+    newQty * parseInt(product.disc_price.replace(/,/g, ""), 10);
   cartRef
-    .update({ qty: newQty, TotalProductPrice: newPrice })
+    .update({
+      qty: newQty,
+      TotalProductPrice: newPrice,
+      SuTotal: subTotal,
+      Discount: newDiscount,
+    })
     .then(() => {
       console.log("successfully updated cart");
       popUp({
