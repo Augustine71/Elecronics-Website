@@ -7,7 +7,7 @@ export const MyOrders = () => {
   return (
     <div className="myorders__container">
       <MyOrdersBanner />
-      <OrderHistory />
+      <OrdersCard />
     </div>
   );
 };

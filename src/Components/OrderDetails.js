@@ -1,35 +1,17 @@
-import React, { useState } from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
+
+import { MyOrdersBanner } from "./MyOrdersBanner";
+import { OrderHistory } from "./OrderHistory";
 // import { OrderReceipt } from './OrderReceipt';
 // import { Details } from './Details';
 export const OrderDetails = () => {
+  const { orderId } = useParams();
 
-    const [isActive, setIsActive] = useState(false);
-
-    return (
-        <div className='orderdetails__container'>
-           <div className="shipping__accordion">
-                <div className="shipping__accordion-item">
-                    <div className="shipping__accordion-title"  onClick={() => setIsActive(!isActive)}>
-                        <div>Shipping Details</div>
-                        <div>{isActive ? '-' : '+'}</div>
-                    </div>
-                    <div className= {`shipping__accordion-content ${isActive ? "open" : ""}`}>
-                        <h5 class="shipping-details__title">Deliver to</h5>
-                        <div>
-                             <p class="shipping-details__items">Augustine Menezes</p>
-                             <p class="shipping-details__items">2-337 kinnikambla house and post Mangalore, Mangalore, Karnataka, IN. 574151</p>
-                             <p class="shipping-details__items">9743904207</p>
-                             <p class="shipping-details__items">amenezes927@gmail.com</p>
-                        </div>
-                        <hr class="shipping-details__hr"/>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    );
-}
-
-<div class="accordion__body">
-   
+  return (
+    <div className="myorders__container">
+      <MyOrdersBanner />
+      <OrderHistory orderId={orderId} />
     </div>
+  );
+};

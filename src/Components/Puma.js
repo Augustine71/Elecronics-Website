@@ -228,15 +228,17 @@ export const Puma = () => {
 
           await fs
             .collection("Order " + userRef)
-            .doc(orderId)
+            .doc(response.razorpay_order_id)
             .set({
               paymentId: response.razorpay_payment_id,
-              razorpay_order_id: response.razorpay_order_id,
+              order_id: orderId,
               name: formValues.name,
               phoneNumber: formValues.phoneNumber,
               pincode: formValues.pincode,
               address: formValues.address,
               CartPrice: totalPrice,
+              CartDiscount: discount,
+              CartSubTotal: subTotal,
               CartQty: totalProducts,
               orderDate: new Date().toISOString().slice(0, 10),
               cartValues: cartItems,

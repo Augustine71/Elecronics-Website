@@ -984,13 +984,6 @@ color: #030303;
   flex-basis: 100%;
 }
 
-.order__number div:nth-child(2){
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 80px;
-}
-
 .order__together{
   display: flex;
   justify-content: space-between;
@@ -1025,13 +1018,13 @@ color: #030303;
     text-align: center;
 }
 
-.order__status.shipped{
+.order__status.delivered{
   background: rgba(55, 159, 142, 0.1);
   border: 1px solid #379F8E;
   color: #379F8E;
 }
 
-.order__status.on-hold{
+.order__status.shipped{
   background: rgba(232, 102, 105, 0.1);
   border: 1px solid #E86669;
   color: #E86669;
@@ -1048,12 +1041,13 @@ color: #030303;
     border-radius: 10px;
     font-weight: 600;
     font-size: 12px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     line-height: 12px;
     background: #22548A;
     text-align: center;
     cursor: pointer;
     padding: 10px 20px;
+    margin-top: 15px;
 }
 
 .order__history-container{
@@ -1108,6 +1102,10 @@ color: #030303;
     line-height: 14px;
     color: #030303;
     margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
 }
 
 .order__history-item-price{
@@ -1178,7 +1176,7 @@ color: #030303;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background: #22548A;
   border-radius: 16px;
 }
@@ -1337,6 +1335,7 @@ line-height: 18px;
   font-size: 16px;
   line-height: 16px;
   border-radius: 16px;
+  margin-top: 20px;
 }
 
 .order__status{
@@ -1364,6 +1363,7 @@ line-height: 18px;
 
 .order__history-item{
   gap: 25px;
+  margin-bottom: 25px;
 }
 
 .order__history-item-img{
@@ -1374,6 +1374,7 @@ line-height: 18px;
   font-size: 20px;
     line-height: 20px;
     margin-bottom: 15px;
+    width: 500px;
 }
 
 .order__history-item-price{
