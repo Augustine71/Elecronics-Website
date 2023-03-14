@@ -29,7 +29,29 @@ export const SignUpNModal = () => {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [firstTimeUser, setFirstImeUser] = useState(false);
 
-  const { signUpModalIsOpen, toggleModalSignUp } = useContext(ModalContext);
+  const { signUpModalIsOpen, toggleModalSignUp, modalProps } =
+    useContext(ModalContext);
+
+  const navigate = useNavigate();
+
+  console.log(modalProps);
+
+  const switchStatement = (currentPage) => {
+    switch (currentPage) {
+      case "Cart":
+        navigate("/cart");
+        break;
+      case "Add":
+        navigate(`/add-to-cart/${modalProps.prod_id}#add`);
+        break;
+      case "Buy":
+        navigate(`/add-to-cart/${modalProps.prod_id}#buy`);
+        break;
+      default:
+        navigate("/404");
+        break;
+    }
+  };
 
   const generateReCaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
@@ -77,8 +99,6 @@ export const SignUpNModal = () => {
       });
   };
 
-  const navigate = useNavigate();
-
   const VerifyOTP = (e) => {
     let confirmationResult = window.confirmationResult;
     console.log(email);
@@ -116,7 +136,7 @@ export const SignUpNModal = () => {
         setIsButtonDisabled(false);
         setFirstImeUser(false);
         toggleModalSignUp();
-        navigate("/");
+        switchStatement(modalProps.type);
         toast.success("You have been logged in successfully", {
           position: "top-right",
           autoClose: 5000,

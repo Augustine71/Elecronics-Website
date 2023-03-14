@@ -18,7 +18,9 @@ export const PdpDescription = (props) => {
           activeSection={activeSection}
         />
       </div>
-      {activeSection === "desc" && <PdpOverview data={props.desc} />}
+      {activeSection === "desc" && (
+        <PdpOverview data={props.desc} prod_cat={props.prod_cat} />
+      )}
       {activeSection === "details" && <PdpFeatures data={props.features} />}
     </div>
   );

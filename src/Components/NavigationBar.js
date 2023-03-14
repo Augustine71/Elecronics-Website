@@ -1,55 +1,107 @@
-import React, { useState } from "react";
-import { Icon } from "react-icons-kit";
-import { shoppingCart } from "react-icons-kit/feather/shoppingCart";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { auth, fs } from "../Config/Config";
+import { ModalContext } from "./ModalContext";
+import { useNavigate } from "react-router-dom";
 
 import "remixicon/fonts/remixicon.css";
-import "boxicons";
 
-export const NavigationBar = () => {
+export const NavigationBar = (props) => {
   const [showIcon, setShowIcon] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [signedIn, isSignedin] = useState(false);
+  const [User, setUser] = useState(null);
+
+  const { toggleModalSignUp } = useContext(ModalContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        isSignedin(true);
+        fs.collection("users")
+          .doc(user.phoneNumber)
+          .get()
+          .then((snapshot) => {
+            setUser(snapshot.data().Name);
+          });
+      } else {
+        isSignedin(false);
+      }
+    });
+  }, []);
 
   const showMenu = () => {
     setShowIcon(!showIcon);
     setIsOpen(!isOpen);
   };
 
+  const handleLogout = () => {
+    auth
+      .signOut()
+      .then(() => {
+        console.log("Succesfull");
+
+        isSignedin(false);
+      })
+      .catch((error) => {
+        isSignedin(true);
+      });
+  };
+
+  const handleCartIconClick = () => {
+    if (signedIn) {
+      navigate("/cart");
+    } else {
+      toggleModalSignUp({ type: "Cart", prod_id: "" });
+    }
+  };
+
   return (
     <>
       <div className="navigationBar__header">
-        <div className="navigationBar__logo">
-          <img src="https://imgur.com/AkgGUK4.jpg" />
-        </div>
+        <Link className="navigationBar__logo" to="/">
+          <img src="https://imgur.com/AkgGUK4.jpg" alt="website-logo" />
+        </Link>
 
         <ul className={`navigationBar__navbar ${isOpen ? "open" : ""}`}>
           <li>
-            <a href="#" className="active">
+            <Link className="active" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <Link to="/all-products">All Products</Link>
           </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          {signedIn ? (
+            <>
+              <li>
+                <Link to="/my-orders">My Orders</Link>
+              </li>
+              <li>
+                <div onClick={handleLogout}>Logout</div>
+              </li>
+            </>
+          ) : (
+            ""
+          )}
         </ul>
 
         <div className="navigationBar__main">
-          <a href="#" className="navigationBar__user">
-            Sign In
-          </a>
-          <a href="#">Register</a>
-          <Link className="navlink" to="/cart">
+          {signedIn ? (
+            <div className="navigationBar__user">{User}</div>
+          ) : (
+            <div
+              onClick={() => toggleModalSignUp()}
+              className="navigationBar__user"
+            >
+              Login
+            </div>
+          )}
+
+          <div className="navlink" onClick={handleCartIconClick}>
             <i className="ri-shopping-cart-line cart-shopping"></i>
-          </Link>
+          </div>
           <div className="navigationBar__menu-icon" onClick={showMenu}>
             {!showIcon && (
               <i

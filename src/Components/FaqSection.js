@@ -11,24 +11,6 @@ export const FaqSection = (props) => {
     setIsOpen(i);
   };
 
-  const accordions = [
-    {
-      title: "How can I get a new screw or sizing piece?",
-      content:
-        "Yes, 10% Niacinamide Serum is antioxidant which is highly effective against active acne as well as acne scars",
-    },
-    {
-      title: "How can I get a new screw or sizing piece?",
-      content:
-        "Yes, 10% Niacinamide Serum is antioxidant which is highly effective against active acne as well as acne scars",
-    },
-    {
-      title: "How can I get a new screw or sizing piece?",
-      content:
-        "Yes, 10% Niacinamide Serum is antioxidant which is highly effective against active acne as well as acne scars",
-    },
-  ];
-
   return (
     <div class="faq__section">
       <div class="faq__content__header">
@@ -39,7 +21,7 @@ export const FaqSection = (props) => {
           {props.questions.map((faq, index) => (
             <div class="faq__accordion" key={index}>
               <div
-                class="faq__accordion__title"
+                class={`faq__accordion__title ${props.prod_cat}`}
                 onClick={() => toggleAccordion(index)}
               >
                 <div>{faq.que}</div>

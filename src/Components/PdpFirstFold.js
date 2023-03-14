@@ -7,11 +7,10 @@ import { CustomHomeCard } from "./CustomHomeCard";
 import { PdpDescription } from "./PdpDescription";
 import { PdpOverview } from "./PdpOverview";
 import { PdpPopUp } from "./PdpPopUp";
+import { SimilarProducts } from "./SimilarProducts";
 
 import { NavigationBar } from "./NavigationBar";
 import { RatingComponent } from "./RatingComponent";
-
-import homeProducts from "../Json/homeProducts.json";
 
 import { ModalContext } from "./ModalContext";
 
@@ -27,31 +26,32 @@ export const PdpFirstFold = (props) => {
   return (
     <>
       <NavigationBar />
+
+      <PdpPopUp setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
       <div className="pdp__content-together">
         {isSmallScreen ? (
           <MobileImageGallery imgs={json.imgs} />
         ) : (
           <CustomImageSlider imgs={json.imgs} />
         )}
-        <PdpPopUp setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <PdpDetails json={json} setOpenPopUp={setOpenPopUp} />
+        <PdpDetails
+          json={json}
+          setOpenPopUp={setOpenPopUp}
+          prod_cat={json.prod_cat}
+        />
       </div>
       {isSmallScreen ? (
-        <PdpDescription desc={json.prod_desc} features={json.features} />
+        <PdpDescription
+          desc={json.prod_desc}
+          features={json.features}
+          prod_cat={json.prod_cat}
+        />
       ) : (
-        <PdpOverview data={json.prod_desc} />
+        <PdpOverview data={json.prod_desc} prod_cat={json.prod_cat} />
       )}
-      <RatingComponent />
-      <div class="homePageCategory__productListingWrapper">
-        <div class="homePageCategory__products-container">
-          <div class="homePageCategory__cards-wrap">
-            {homeProducts[1].types.map((product) => (
-              <CustomHomeCard product={product} />
-            ))}
-          </div>
-        </div>
-      </div>
-      <FaqSection questions={json.faqs} />
+      <RatingComponent prod_cat={json.prod_cat} />
+      <SimilarProducts data={json.similar_products} prod_cat={json.prod_cat} />
+      <FaqSection questions={json.faqs} prod_cat={json.prod_cat} />
 
       <div className="footer__container">
         <div className="footer__company-section">

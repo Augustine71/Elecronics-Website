@@ -12,6 +12,7 @@ export const ModalContext = createContext({
   toggleModalRating: () => {},
   user: null,
   totalProducts: 0,
+  modalProps: null,
 });
 
 export const ModalProvider = ({ children }) => {
@@ -20,13 +21,15 @@ export const ModalProvider = ({ children }) => {
   const [ratingModalIsOpen, setRatingModalIsOpen] = useState(false);
   const [user, setUser] = useState(null);
   const [totalProducts, setTotalProducts] = useState(0);
+  const [modalProps, setModalProps] = useState(null);
 
   const toggleModalLogIn = () => {
     setLogInModalIsOpen(!logInModalIsOpen);
   };
 
-  const toggleModalSignUp = () => {
+  const toggleModalSignUp = (props) => {
     setSignUpModalIsOpen(!signUpModalIsOpen);
+    setModalProps(props);
   };
 
   const toggleModalRating = () => {
@@ -61,6 +64,7 @@ export const ModalProvider = ({ children }) => {
         toggleModalRating,
         user,
         totalProducts,
+        modalProps,
       }}
     >
       {children}

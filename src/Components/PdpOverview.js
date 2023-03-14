@@ -35,7 +35,10 @@ export const PdpOverview = (props) => {
           ))}
         </div>
       </div>
-      <div onClick={toggleShowFull} className="pdp__overview-show-btn">
+      <div
+        onClick={toggleShowFull}
+        className={`pdp__overview-show-btn ${props.prod_cat}`}
+      >
         {!showFull ? "Show More" : "Show Less"}
       </div>
     </>

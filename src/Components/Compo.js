@@ -1,10 +1,10 @@
 import React from "react";
-import { CustomerReviews } from "./CustomerReviews";
+import { HomePageCategory } from "./HomePageCategory";
 
 export const Compo = () => {
   return (
     <>
-      <CustomerReviews />
+      <HomePageCategory />
     </>
   );
 };

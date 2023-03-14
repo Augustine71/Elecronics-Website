@@ -47,7 +47,7 @@ export const PdpDetails = (props) => {
           console.error("Error getting product from cart:", error);
         });
     } else {
-      toggleModalSignUp();
+      toggleModalSignUp({ type: "Add", prod_id: props.json.prod_id });
     }
   };
 
@@ -85,7 +85,7 @@ export const PdpDetails = (props) => {
           console.error("Error getting product from cart:", error);
         });
     } else {
-      toggleModalSignUp();
+      toggleModalSignUp({ type: "Buy", prod_id: props.json.prod_id });
     }
   };
 
@@ -120,7 +120,10 @@ export const PdpDetails = (props) => {
         <div className="pdp__add-to-cart" onClick={() => addToCart(props.json)}>
           Add to Cart
         </div>
-        <div className="pdp__buy-now" onClick={() => buyNow(props.json)}>
+        <div
+          className={`pdp__buy-now ${props.prod_cat}`}
+          onClick={() => buyNow(props.json)}
+        >
           Buy Now
         </div>
       </div>

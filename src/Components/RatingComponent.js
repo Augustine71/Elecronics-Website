@@ -3,7 +3,7 @@ import { Rate } from "antd";
 
 import { ModalContext } from "./ModalContext";
 
-export const RatingComponent = () => {
+export const RatingComponent = (props) => {
   const { toggleModalRating } = useContext(ModalContext);
 
   return (
@@ -13,7 +13,7 @@ export const RatingComponent = () => {
         <div class="rating__styledReviewContainer">
           <div class="left">
             <div class="ratings__overview">
-              <div class="rating__container">
+              <div class={`rating__container ${props.prod_cat}`}>
                 <span class="number">4.4</span>
                 <div class="rating__styledWrapper">
                   <Rate allowHalf defaultValue={4.5} />
@@ -68,7 +68,10 @@ export const RatingComponent = () => {
           </div>
         </div>
       </div>
-      <div className="ratings__write-a-review" onClick={toggleModalRating}>
+      <div
+        className={`ratings__write-a-review ${props.prod_cat}`}
+        onClick={toggleModalRating}
+      >
         Write a Review
       </div>
     </div>

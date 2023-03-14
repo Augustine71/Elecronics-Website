@@ -12,6 +12,7 @@ import { OrderDetails } from "./Components/OrderDetails";
 import { LogInModal } from "./Components/LogInModal";
 import { SignUpNModal } from "./Components/SignUpModal";
 import { RatingModal } from "./Components/RatingModal";
+import { AddToCart } from "./Components/AddToCart";
 
 import { ModalProvider } from "./Components/ModalContext";
 
@@ -50,8 +51,9 @@ export const App = () => {
           <Route path="/order-details/:orderId" element={<OrderDetails />} />
           <Route path="/all-products" element={<AllProducts />} />
           <Route path="/compcheck" element={<Compo />} />
-          <Route path="/*" element={<NotFound />} />
           <Route path="/dp/:productId" element={<ProductDisplayPage />} />
+          <Route path="/add-to-cart/:productId" element={<AddToCart />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <LogInModal />
         <SignUpNModal />

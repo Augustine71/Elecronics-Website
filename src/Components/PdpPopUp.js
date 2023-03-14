@@ -11,7 +11,7 @@ export const PdpPopUp = (props) => {
   }, [props.openPopUp]);
 
   return (
-    <div className={`pdp_popup ${props.openPopUp ? "show" : ""}`}>
+    <div className={`pdp_popup ${props.openPopUp.text ? "show" : ""}`}>
       {props.openPopUp.text && (
         <div>
           {props.openPopUp.icon}

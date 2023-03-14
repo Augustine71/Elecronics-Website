@@ -23,7 +23,9 @@ function firebaseUpdateFunction(product, cartRef, doc, popUp, type, navigate) {
         icon: <BsFillCheckCircleFill className="green-check" />,
       });
       if (type === "buy") {
-        navigate("/cart");
+        setTimeout(() => {
+          navigate(`/cart`);
+        }, 1000);
       }
     })
     .catch((error) => {
