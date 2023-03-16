@@ -3,8 +3,6 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
 
-const port = 3001;
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
@@ -47,6 +45,8 @@ app.post("/razorpay", async (req, res) => {
     console.log(error);
   }
 });
+
+const port = process.env.PORT || 3001;
 
 app.listen(port, () => {
   console.log(`your app is running on port no ${port}`);
