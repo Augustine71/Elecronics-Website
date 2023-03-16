@@ -3,10 +3,10 @@
     "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666992109/Croma%20Assets/Communication/Mobiles/Images/250716_rea31a.png/mxw_600,f_auto",
     "prod_cat":"mb",
     "actual_price":"71,999",
+    "prod_id":"1501",
     "disc_price":"65,999",
     "rating":4.9,
     "total_ratings":32,
-    "prod_id":"1501",
     "prod_desc":{
         "heading":"Why buy Oneplus 10 Pro 5G",
         "features":[
@@ -84,6 +84,43 @@
             "title":"Security (Lock)",
             "desc":"In-display Fingerprint Sensor"
         }
+    ],
+    "similar_products":[
+        {
+            "name":"Apple iPhone 14 Pro Max (256GB, Deep Purple)",
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "actual_price":"149,900",
+            "discounted_price":"144,990",
+            "prod_id":"1500",
+            "rating":4.5,
+            "total_rating":12
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347118/Croma%20Assets/Communication/Mobiles/Images/268878_dygou8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)",
+            "actual_price":"116,999",
+            "discounted_price":"94,999",
+            "rating":4.4,
+            "total_rating":51,
+            "prod_id":"1503"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662438528/Croma%20Assets/Communication/Mobiles/Images/252195_nojq8m.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"Xiaomi 12 Pro 5G (12GB RAM, 256GB, Opera Mauve)",
+            "actual_price":"84,999",
+            "discounted_price":"57,999",
+            "rating":4,
+            "total_rating":3,
+            "prod_id":"1504"
+        },
+        { "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662444804/Croma%20Assets/Communication/Mobiles/Images/247134_dnhupm.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Xiaomi 11i 5G (8GB RAM, 128GB, Pacific Pearl)",
+        "actual_price":"31,999",
+        "discounted_price":"26,099",
+        "rating":43,
+        "total_rating":4.1,
+        "prod_id":"1505"
+    }
     ],
     "faqs":[
         {

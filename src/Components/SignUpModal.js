@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { useNavigate } from "react-router-dom";
 
-export const SignUpNModal = () => {
+export const SignUpModal = () => {
   const [phoneDetails, setPhoneDetails] = useState(true);
   const [showOtp, setShowOtp] = useState(false);
   const [showDetails, setShowDetails] = useState(false);

@@ -12,9 +12,44 @@ export const NavigationBar = (props) => {
   const [signedIn, isSignedin] = useState(false);
   const [User, setUser] = useState(null);
 
-  const { toggleModalSignUp } = useContext(ModalContext);
-  const navigate = useNavigate();
+  const [dropdowns, setDropdowns] = useState({
+    dropdown1: { isOpen: window.innerWidth <= 768 ? true : false },
+    dropdown2: { isOpen: window.innerWidth <= 768 ? true : false },
+  });
 
+  const handleDropdownClick = (name) => {
+    setDropdowns((prevState) => {
+      return {
+        ...prevState,
+        [name]: { isOpen: !prevState[name].isOpen },
+      };
+    });
+  };
+
+  const handleDropdownMouseEnter = (name) => {
+    if (window.innerWidth >= 768) {
+      setDropdowns((prevState) => {
+        return {
+          ...prevState,
+          [name]: { isOpen: true },
+        };
+      });
+    }
+  };
+
+  const handleDropdownMouseLeave = (name) => {
+    if (window.innerWidth >= 768) {
+      setDropdowns((prevState) => {
+        return {
+          ...prevState,
+          [name]: { isOpen: false },
+        };
+      });
+    }
+  };
+
+  const { toggleModalSignUp, totalProducts } = useContext(ModalContext);
+  const navigate = useNavigate();
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
@@ -64,28 +99,112 @@ export const NavigationBar = (props) => {
           <img src="https://imgur.com/AkgGUK4.jpg" alt="website-logo" />
         </Link>
 
-        <ul className={`navigationBar__navbar ${isOpen ? "open" : ""}`}>
-          <li>
+        <div className={`navigationBar__navbar ${isOpen ? "open" : ""}`}>
+          <div className="nav__item">
             <Link className="active" to="/">
               Home
             </Link>
-          </li>
-          <li>
-            <Link to="/all-products">All Products</Link>
-          </li>
+          </div>
+          <div
+            class="navbar__dropdown"
+            onClick={() => handleDropdownClick("dropdown1")}
+            onMouseEnter={() => handleDropdownMouseEnter("dropdown1")}
+            onMouseLeave={() => handleDropdownMouseLeave("dropdown1")}
+          >
+            <div class="navbar__label-container navv__item">
+              <div
+                class={`navbar__dropdown-arrow-two ${
+                  dropdowns.dropdown1.isOpen ? "show" : ""
+                }`}
+              ></div>
+              <div class="navbar__dropdown-title">All Products</div>
+            </div>
+            {dropdowns.dropdown1.isOpen && (
+              <div className="navbar__dropdown-linksWrapper">
+                <Link class="navbar__dropdown-linkItem" to="/all-products">
+                  <div class="dropdown-link">
+                    <div class="dropdown-description">
+                      <div class="dropdown-label-tag">
+                        <div class="dropdown-label">Tablets</div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link class="navbar__dropdown-linkItem" to="/all-products">
+                  <div class="dropdown-link">
+                    <div class="dropdown-description">
+                      <div class="dropdown-label-tag">
+                        <div class="dropdown-label">Mobile</div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link class="navbar__dropdown-linkItem" to="/all-products">
+                  <div class="dropdown-link">
+                    <div class="dropdown-description">
+                      <div class="dropdown-label-tag">
+                        <div class="dropdown-label">Laptops</div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link class="navbar__dropdown-linkItem" to="/all-products">
+                  <div class="dropdown-link">
+                    <div class="dropdown-description">
+                      <div class="dropdown-label-tag">
+                        <div class="dropdown-label">Acne Control</div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            )}
+          </div>
           {signedIn ? (
-            <>
-              <li>
-                <Link to="/my-orders">My Orders</Link>
-              </li>
-              <li>
-                <div onClick={handleLogout}>Logout</div>
-              </li>
-            </>
+            <div
+              class="navbar__dropdown"
+              onClick={() => handleDropdownClick("dropdown2")}
+              onMouseEnter={() => handleDropdownMouseEnter("dropdown2")}
+              onMouseLeave={() => handleDropdownMouseLeave("dropdown2")}
+            >
+              <div class="navbar__label-container navv__item">
+                <div
+                  class={`navbar__dropdown-arrow ${
+                    dropdowns.dropdown2.isOpen ? "show" : ""
+                  }`}
+                ></div>
+                <div class="navbar__dropdown-title">Hi, {User}</div>
+              </div>
+              {dropdowns.dropdown2.isOpen && (
+                <div className="navbar__dropdown-linksWrapper">
+                  <Link class="navbar__dropdown-linkItem" to="/my-orders">
+                    <div class="dropdown-link">
+                      <div class="dropdown-description">
+                        <div class="dropdown-label-tag">
+                          <div class="dropdown-label">My Orders</div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <div
+                    className="navbar__dropdown-linkItem"
+                    onClick={handleLogout}
+                  >
+                    <div class="dropdown-link">
+                      <div class="dropdown-description">
+                        <div class="dropdown-label-tag">
+                          <div class="dropdown-label">Logout</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           ) : (
             ""
           )}
-        </ul>
+        </div>
 
         <div className="navigationBar__main">
           {signedIn ? (
@@ -101,6 +220,7 @@ export const NavigationBar = (props) => {
 
           <div className="navlink" onClick={handleCartIconClick}>
             <i className="ri-shopping-cart-line cart-shopping"></i>
+            <span className="cart-indicator">{totalProducts}</span>
           </div>
           <div className="navigationBar__menu-icon" onClick={showMenu}>
             {!showIcon && (
@@ -117,6 +237,10 @@ export const NavigationBar = (props) => {
             )}
           </div>
         </div>
+        <div
+          className={`navigationBar__overlay ${isOpen ? "open" : ""}`}
+          onClick={showMenu}
+        ></div>
       </div>
       <div className="navigationBar__partition"></div>
     </>

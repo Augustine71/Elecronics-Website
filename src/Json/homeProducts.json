@@ -130,5 +130,49 @@
     }
     
 ]
+},{
+    "heading":"Wireless Earbuds",
+    "cat":"ap",
+    "desc":"Discover the best Mobiles in our store",
+    "types":
+    [
+    {
+        "name":"boAt Airdopes 113 Wireless Gaming Earbuds",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664374836/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/263024_mcyrnq.png/mxw_2048,f_auto",
+        "prod_id":"1800",
+        "actual_price":"2,990",
+        "discounted_price":"1,299",
+        "rating":4.5,
+        "total_rating":74
+    },
+    {
+        "name":"Croma CREEH2006sBTEB TWS Earbuds with Noise Isolation",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1674052323/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/248627_0_s9yj30.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "prod_id":"1801",
+        "actual_price":"2,000",
+        "discounted_price":"899",
+        "rating":3.7,
+        "total_rating":58
+    },
+    {
+        "name":"pTron Basspods 681 140317984 TWS Earbuds",
+    "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1674051975/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/247452_0_mej5jl.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "prod_id":"1802",
+    "actual_price":"3,999",
+    "discounted_price":"899",
+    "rating":4,
+    "total_rating":39
+    },
+    {
+        "name":"boAt Airdopes 441 TWS Earbuds",
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664476726/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/246109_lrn1rd.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "prod_id":"1803",
+        "actual_price":"5,999",
+        "discounted_price":"1,349",
+        "rating":3.7,
+        "total_rating":47
+    }
+    
+]
 }
 ]

@@ -1,7 +1,8 @@
 {
-    "name":"Realme Pad Wi-Fi + 4G Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Grey)",
+    "name":"Realme Pad Wi-Fi + 4G Android Tablet",
     "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667848350/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/244447_0_onx1rq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
-    "prod_cat":"lp",
+    "prod_cat":"tb",
+    "prod_id":"1702",
     "actual_price":"29,999",
     "disc_price":"15,999",
     "rating":4.8,

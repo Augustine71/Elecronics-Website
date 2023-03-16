@@ -13,6 +13,7 @@ export const ModalContext = createContext({
   user: null,
   totalProducts: 0,
   modalProps: null,
+  ratingProps: null,
 });
 
 export const ModalProvider = ({ children }) => {
@@ -22,6 +23,7 @@ export const ModalProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [totalProducts, setTotalProducts] = useState(0);
   const [modalProps, setModalProps] = useState(null);
+  const [ratingProps, setRatingProps] = useState(null);
 
   const toggleModalLogIn = () => {
     setLogInModalIsOpen(!logInModalIsOpen);
@@ -32,8 +34,9 @@ export const ModalProvider = ({ children }) => {
     setModalProps(props);
   };
 
-  const toggleModalRating = () => {
+  const toggleModalRating = (props) => {
     setRatingModalIsOpen(!ratingModalIsOpen);
+    setRatingProps(props);
   };
 
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
@@ -65,6 +68,7 @@ export const ModalProvider = ({ children }) => {
         user,
         totalProducts,
         modalProps,
+        ratingProps,
       }}
     >
       {children}

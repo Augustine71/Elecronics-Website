@@ -5,8 +5,11 @@ import homeProducts from "../Json/homeProducts.json";
 export const HomePageCategory = () => {
   return (
     <>
-      {homeProducts.map((products) => (
-        <div className={`homePageCategory__container ${products.cat}`}>
+      {homeProducts.map((products, index) => (
+        <div
+          className={`homePageCategory__container ${products.cat}`}
+          id={`section${index + 1}`}
+        >
           <div
             class={`homePageCategory__color-container ${products.cat}`}
           ></div>

@@ -49,7 +49,7 @@ export const PdpFirstFold = (props) => {
       ) : (
         <PdpOverview data={json.prod_desc} prod_cat={json.prod_cat} />
       )}
-      <RatingComponent prod_cat={json.prod_cat} />
+      <RatingComponent prod_cat={json.prod_cat} prod_id={json.prod_id} />
       <SimilarProducts data={json.similar_products} prod_cat={json.prod_cat} />
       <FaqSection questions={json.faqs} prod_cat={json.prod_cat} />
 

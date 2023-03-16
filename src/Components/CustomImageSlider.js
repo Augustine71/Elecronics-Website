@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export const CustomImageSlider = (props) => {
   const [mainImage, setMainImage] = useState(props.imgs[0]);
   const [activeIndex, setActiveIndex] = useState(0);
+  console.log(mainImage);
 
   const columnRef = useRef(null);
 
@@ -17,6 +18,11 @@ export const CustomImageSlider = (props) => {
     setMainImage(JSON.parse(myData));
     setActiveIndex(index);
   };
+
+  useEffect(() => {
+    setMainImage(props.imgs[0]);
+    setActiveIndex(0);
+  }, [props.imgs]);
 
   return (
     <div className="custom__image-gallery">

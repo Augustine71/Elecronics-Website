@@ -1,0 +1,431 @@
+[
+    {
+        "heading":"Laptops",
+        "cat":"lp",
+        "types":
+        [
+        {
+            "name":"ASUS TUF Gaming A17 FA706IC-HX036W AMD Ryzen 7",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664416536/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257130_0_htx0fu.png/mxw_2048,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1600",
+            "actual_price":"94,990",
+            "disc_price":"67,990",
+            "rating":5,
+            "total_ratings":5
+        },
+        {
+            "name":"Apple MacBook Pro 2020 (M1, 14.2 inch, 16GB, 1TB)",
+        "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663350670/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245235_0_lkhkv1.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "prod_cat":"lp",
+        "prod_id":"1601",
+        "actual_price":"239,900",
+        "disc_price":"219,894",
+        "rating":4,
+        "total_ratings":1
+        },
+        {
+            "name":"HP x360 14a-cb0007AU Chromebook AMD 3015Ce (4GB, 64GB, Chrome OS, 14 inch)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663346517/Croma%20Assets/Computers%20Peripherals/Laptop/Images/246072_0_uaxc2t.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1602",
+            "actual_price":"36,358",
+            "disc_price":"27,994",
+            "rating":4.2,
+            "total_ratings":5
+        },
+        {
+            "name":"Dell Inspiron 3525 AMD Ryzen 3 (15.6 inch, 8GB, 256GB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1668662427/Croma%20Assets/Computers%20Peripherals/Laptop/Images/262352_0_khm1ns.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1603",
+            "actual_price":"45,000",
+            "disc_price":"36,990",
+            "rating":4,
+            "total_ratings":8
+        },
+        {
+            "name":"Dell Inspiron 7415 AMD Ryzen 7 (14 inch, 16GB, 512GB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663347055/Croma%20Assets/Computers%20Peripherals/Laptop/Images/242929_0_mooxml.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1604",
+            "actual_price":"105,829",
+            "disc_price":"83,990",
+            "rating":5,
+            "total_ratings":1
+        },
+        {
+            "name":"Dell Inspiron 15 5520 Intel Core i5 12th Gen",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663347404/Croma%20Assets/Computers%20Peripherals/Laptop/Images/252184_0_sz4zqo.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1605",
+            "actual_price":"96,299",
+            "disc_price":"84,990",
+            "rating":5,
+            "total_ratings":2
+        },
+        {
+            "name":"HP 14s-dq3033TU Intel Pentium (14 inch, 8GB, 256GB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1670667309/Croma%20Assets/Computers%20Peripherals/Laptop/Images/266547_po1tsa.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1606",
+            "actual_price":"40,270",
+            "disc_price":"29,890",
+            "rating":4.6,
+            "total_ratings":4
+        },
+        {
+            "name":"HP 14a-na0002tu Chromebook Intel Celeron",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663347538/Croma%20Assets/Computers%20Peripherals/Laptop/Images/244320_0_nlondt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1607",
+            "actual_price":"32,683",
+            "disc_price":"27,490",
+            "rating":4.6,
+            "total_ratings":5
+        },
+        {
+            "name":"Apple MacBook Air 2020 (M1, 13.3 Inch, 8GB, 256GB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664423222/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_0_cjayuw.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1608",
+            "actual_price":"99,900",
+            "disc_price":"82,900",
+            "rating":4.8,
+            "total_ratings":16
+        },
+        {
+            "name":"Apple MacBook Air 2022 (M2, 8GB, 256GB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1657282804/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256601_oocztd.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1609",
+            "actual_price":"119,900",
+            "disc_price":"110,390",
+            "rating":5,
+            "total_ratings":17
+        },
+        {
+            "name":"ASUS 14 Intel Celeron (14 inch, 4GB, 256GB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663351349/Croma%20Assets/Computers%20Peripherals/Laptop/Images/250277_0_kn1jy9.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1610",
+            "actual_price":"36,990",
+            "disc_price":"22,990",
+            "rating":4.6,
+            "total_ratings":3
+        },
+        {
+            "name":"ASUS ROG Flow X13 AMD Ryzen 7 (13.4 inch, 32GB, 1TB)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664421780/Croma%20Assets/Computers%20Peripherals/Laptop/Images/259160_0_lufigp.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"lp",
+            "prod_id":"1611",
+            "actual_price":"201,990",
+            "disc_price":"167,990",
+            "rating":4.2,
+            "total_ratings":6 
+        }
+    ]
+    },{
+        "heading":"Mobiles",
+        "cat":"mb",
+        "types":
+        [
+        {
+            "name":"Apple iPhone 14 Pro Max (256GB, Deep Purple)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "actual_price":"149,900",
+            "disc_price":"144,990",
+            "prod_id":"1500",
+            "prod_cat":"mb",
+            "rating":4.5,
+            "total_ratings":12
+        },
+        {
+            "name":"OnePlus 10 Pro 5G (12GB RAM, 256GB, Emerald Forest)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666992109/Croma%20Assets/Communication/Mobiles/Images/250716_rea31a.png/mxw_600,f_auto",
+            "prod_cat":"mb",
+            "actual_price":"71,999",
+            "prod_id":"1501",
+            "disc_price":"65,999",
+            "rating":4.9,
+            "total_ratings":32
+        },
+        {
+            "name":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)",
+    "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347118/Croma%20Assets/Communication/Mobiles/Images/268878_dygou8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "prod_cat":"mb",
+    "actual_price":"115,999",
+    "disc_price":"94,999",
+    "prod_id":"1502",
+    "rating":4.9,
+    "total_ratings":32
+        },
+        {
+            "name":"Xiaomi 12 Pro 5G (12GB RAM, 256GB, Opera Mauve)",
+    "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662438528/Croma%20Assets/Communication/Mobiles/Images/252195_nojq8m.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "prod_cat":"mb",
+    "actual_price":"84,999",
+    "prod_id":"1503",
+    "disc_price":"57,999",
+    "rating":4,
+    "total_ratings":3
+        },
+        {
+            "name":"Redmi Note 11 Pro (8GB RAM, 128GB, Stealth Black)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666992241/Croma%20Assets/Communication/Mobiles/Images/251174_tb2def.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "prod_id":"1504",
+            "actual_price":"24,999",
+            "disc_price":"19,999",
+            "rating":4.6,
+            "total_ratings":22    
+        },
+        {
+            "name":"Xiaomi 11i 5G (8GB RAM, 128GB, Pacific Pearl)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662444804/Croma%20Assets/Communication/Mobiles/Images/247134_dnhupm.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "prod_id":"1505",
+            "actual_price":"31,999",
+            "disc_price":"26,099",
+            "rating":4.1,
+            "total_ratings":43   
+        },
+        {
+            "name":"SAMSUNG Galaxy S20 FE 5G (8GB RAM, 128GB, Cloud Mint)",
+    "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666992553/Croma%20Assets/Communication/Mobiles/Images/233768_qn7m8w.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "prod_cat":"mb",
+    "prod_id":"1506",
+    "actual_price":"74,999",
+    "disc_price":"33,990",
+    "rating":4.4,
+    "total_ratings":31
+        },
+        {
+            "name":"SAMSUNG Galaxy Z Fold4 5G (12GB RAM, 256GB, Beige)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666100227/Croma%20Assets/Communication/Mobiles/Images/260533_0_vtjpea.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "actual_price":"177,999",
+            "disc_price":"154,999",
+            "rating":3.8,
+            "prod_id":"1507",
+            "total_ratings":45   
+        },
+        {
+            "name":"OnePlus 10R 5G (8GB RAM, 128GB, Sierra Black)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662436320/Croma%20Assets/Communication/Mobiles/Images/252417_s8umxt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "prod_id":"1508",
+            "actual_price":"38,999",
+            "disc_price":"34,999",
+            "rating":4.5,
+            "total_ratings":33    
+        },
+        {
+            "name":"OnePlus 11 5G (16GB RAM, 256GB, Titan Black)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675251452/Croma%20Assets/Communication/Mobiles/Images/268761_ldq3nt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "prod_id":"1509",
+            "actual_price":"72,999",
+            "disc_price":"61,999",
+            "rating":4.8,
+            "total_ratings":11   
+        },
+        {
+            "name":"Apple iPhone 14 (128GB, Blue)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703724/Croma%20Assets/Communication/Mobiles/Images/261934_qgssvy.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "prod_id":"1510",
+            "actual_price":"79,900",
+            "disc_price":"71,990",
+            "rating":4.7,
+            "total_ratings":53   
+        },
+        {
+            "name":"Apple iPhone 13 (128GB, Pink)",
+            "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664009482/Croma%20Assets/Communication/Mobiles/Images/243461_0_tzq0y4.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_cat":"mb",
+            "prod_id":"1511",
+            "actual_price":"69,900",
+            "disc_price":"62,990",
+            "rating":4.8,
+            "total_ratings":36
+        }
+        
+    ]
+    },{
+        "heading":"Tablets",
+        "cat":"tb",
+        "desc":"Discover the best Tablets in our store",
+        "types":
+        [
+            {
+                "name":"SAMSUNG Galaxy Tab A8 Wi-Fi + 4G Android Tablet",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667854771/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/247596_0_flquxt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"tb",
+                "prod_id":"1700",
+                "actual_price":"28,799",
+                "disc_price":"19,999",
+                "rating":4.8,
+                "total_ratings":22
+            },
+            {
+                "name":"NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM)",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667849714/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/245650_0_ksd3sp.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"tb",
+                "prod_id":"1701",
+                "actual_price":"19,499",
+                "disc_price":"15,649",
+                "rating":5,
+                "total_ratings":1
+            },
+            {
+                "name":"Realme Pad Wi-Fi + 4G Android Tablet",
+    "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667848350/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/244447_0_onx1rq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+    "prod_cat":"tb",
+    "prod_id":"1702",
+    "actual_price":"29,999",
+    "disc_price":"15,999",
+    "rating":4.8,
+    "total_ratings":35
+            },
+            {
+                "name":"Lenovo Yoga Smart Tab Wi-Fi + 4G Android Tablet",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667853240/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/233723_0_wuj5kk.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"tb",
+                "prod_id":"1704",
+                "actual_price":"35,500",
+                "disc_price":"19,999",
+                "rating":4.2,
+                "total_ratings":36    
+            }
+        
+    ]
+    },{
+        "heading":"Wireless Earphones",
+        "cat":"ap",
+        "types":
+        [
+            {
+                "name":"boAt Airdopes 113 Wireless Gaming Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664374836/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/263024_mcyrnq.png/mxw_2048,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1800",
+                "actual_price":"2,990",
+                "disc_price":"1,299",
+                "rating":4.5,
+                "total_ratings":74
+            },
+            {
+                "name":"Croma CREEH2006sBTEB TWS Earbuds with Noise Isolation",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1674052323/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/248627_0_s9yj30.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1801",
+                "actual_price":"2,000",
+                "disc_price":"899",
+                "rating":3.7,
+                "total_ratings":58
+            },
+            {
+                "name":"pTron Basspods 681 140317984 TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1674051975/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/247452_0_mej5jl.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1802",
+                "actual_price":"3,999",
+                "disc_price":"899",
+                "rating":4,
+                "total_ratings":39 
+            },
+            {
+                "name":"boAt Airdopes 441 TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664476726/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/246109_lrn1rd.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1803",
+                "actual_price":"5,999",
+                "disc_price":"1,349",
+                "rating":3.7,
+                "total_ratings":47
+            },
+            {
+                "name":"realme Buds Air 3 RMA2105 TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1674049455/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/256473_0_jqnt02.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1804",
+                "actual_price":"5,999",
+                "disc_price":"3,999",
+                "rating":4.9,
+                "total_ratings":26
+            },
+            {
+                "name":"boAt Airdopes 131 Pro TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663946283/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/261789_gidsqx.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1805",
+                "actual_price":"1,999",
+                "disc_price":"1,599",
+                "rating":3,
+                "total_ratings":5    
+            },
+            {
+                "name":"OnePlus Buds Pro 2 E507A TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1676025140/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/268677_glflid.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1806",
+                "actual_price":"13,999",
+                "disc_price":"11,999",
+                "rating":4,
+                "total_ratings":7  
+            },
+            {
+                "name":"Defunc True Sport TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347228/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/268847_lx09u2.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1807",
+                "actual_price":"9,999",
+                "disc_price":"5,499",
+                "rating":5,
+                "total_ratings":8  
+            },
+            {
+                "name":"Defunc True Music TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675338299/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/268839_llpl0b.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1808",
+                "actual_price":"4,999",
+                "disc_price":"2,549",
+                "rating":3,
+                "total_ratings":8  
+            },
+            {
+                "name":"JBL Wave Buds TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675326842/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/268637_zm1dio.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1809",
+                "actual_price":"3,999",
+                "disc_price":"3,599",
+                "rating":5,
+                "total_ratings":43   
+            },
+            {
+                "name":"JBL Wave Beam TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675325841/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/268632_vdp8sw.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1810",
+                "actual_price":"4,999",
+                "disc_price":"4,299",
+                "rating":4.9,
+                "total_ratings":8    
+            },
+            {
+                "name":"Bose QuietComfort II TWS Earbuds",
+                "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1672819824/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/267472_nit1ea.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+                "prod_cat":"ap",
+                "prod_id":"1811",
+                "actual_price":"29,900",
+                "disc_price":"25,900",
+                "rating":4.7,
+                "total_ratings":6 
+            }
+        
+    ]
+    }
+    ]

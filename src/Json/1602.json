@@ -1,7 +1,8 @@
 {
-    "name":"HP x360 14a-cb0007AU Chromebook AMD 3015Ce (4GB, 64GB, Chrome OS, 14 inch, Silver, 4X3G1PA#ACJ)",
+    "name":"HP x360 14a-cb0007AU Chromebook AMD 3015Ce (4GB, 64GB, Chrome OS, 14 inch)",
     "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663346517/Croma%20Assets/Computers%20Peripherals/Laptop/Images/246072_0_uaxc2t.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
     "prod_cat":"lp",
+    "prod_id":"1602",
     "actual_price":"36,358",
     "disc_price":"27,994",
     "rating":4.2,
@@ -78,6 +79,44 @@
         {
             "title":"Warranty",
             "desc":"1 Year Onsite"
+        }
+    ],
+    "similar_products":[
+        {
+            "name":"Dell Inspiron 15 5520 Intel Core i5 12th Gen",
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663347404/Croma%20Assets/Computers%20Peripherals/Laptop/Images/252184_0_sz4zqo.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_id":"1605",
+            "actual_price":"96,299",
+            "discounted_price":"84,990",
+            "rating":5,
+            "total_rating":2
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664416536/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257130_0_htx0fu.png/mxw_200,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"ASUS TUF Gaming A17 FA706IC-HX036W AMD Ryzen 7 (17.3 inch, 8GB, 512GB, Windows 11 Home, NVIDIA GeForce RTX 3050, FHD IPS Display, Graphite Black, 90NR0675-M002F0)",
+            "actual_price":"94,900",
+            "discounted_price":"67,990",
+            "rating":5,
+            "total_rating":5,
+            "prod_id":"1600"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663350670/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245235_0_lkhkv1.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"Apple MacBook Pro 2020 (M1, 14.2 inch, 16GB, 1TB, macOS Monterey, Silver)",
+            "actual_price":"2,39,900",
+            "discounted_price":"2,19,900",
+            "rating":4,
+            "total_rating":1,
+            "prod_id":"1601"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1668662427/Croma%20Assets/Computers%20Peripherals/Laptop/Images/262352_0_khm1ns.png/mxw_200,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"Dell Inspiron 3525 AMD Ryzen 3 (15.6 inch, 8GB, 256GB, Windows 11, MS Office 2021, AMD Radeon, FHD, Platinum Silver, D560831WIN9SE)",
+            "actual_price":"45,000",
+            "discounted_price":"44,990",
+            "rating":4,
+            "total_rating":8,
+            "prod_id":"1603"
         }
     ],
     "faqs":[

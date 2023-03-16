@@ -1,88 +1,51 @@
 import React from "react";
 
-export const ProductCard = () => {
+import { Rate } from "antd";
+import { Link } from "react-router-dom";
+
+export const ProductCard = ({ products }) => {
   return (
     <>
-      <div className="content">
-        <img
-          src="//img.tatacliq.com/images/i4/437Wx649H/MP000000005244387_437Wx649H_20190810050207.jpeg"
-          alt="bag"
-        />
-        <h3>Bag</h3>
-        <p> lorem</p>
-        <h6>$1000</h6>
-        <ul>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-        </ul>
-        <button className="buy-1">Add to Cart</button>
-      </div>
-      <div className="content">
-        <img
-          src="//img.tatacliq.com/images/i4/437Wx649H/MP000000005244387_437Wx649H_20190810050207.jpeg"
-          alt="bag"
-        />
-        <h3>Bag</h3>
-        <p> lorem</p>
-        <h6>$1000</h6>
-        <ul>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-        </ul>
-        <button className="buy-1">Add to Cart</button>
-      </div>
-      <div className="content">
-        <img
-          src="//img.tatacliq.com/images/i4/437Wx649H/MP000000005244387_437Wx649H_20190810050207.jpeg"
-          alt="bag"
-        />
-        <h3>Bag</h3>
-        <p> lorem</p>
-        <h6>$1000</h6>
-        <ul>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star checked"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-        </ul>
-        <button className="buy-1">Add to Cart</button>
+      <div className="all-products-product-together">
+        <div className="all-products-heading">{products.heading}</div>
+        <div className="gallery">
+          {products.types.map((product) => (
+            <Link to={`/dp/${product.prod_id}`}>
+              <div class="home-card__main-container all-products">
+                <div>
+                  <div class="home-card__img-hover">
+                    <img
+                      class="home-card__img-container"
+                      src={product.prod_img}
+                      alt="hello"
+                      width="360"
+                      height="360"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="home-card__product-info">
+                    <div class="home-card__name">{product.name}</div>
+                    <div class="home-card__rating">
+                      <div class="home-card__rating-stars">
+                        <Rate
+                          disabled
+                          allowHalf
+                          defaultValue={Math.round(product.rating * 2) / 2}
+                        />
+                      </div>
+                    </div>
+                    <div class="home-card__price-ctn">
+                      <div class="home-card__price">₹{product.disc_price}</div>
+                      <div class="home-card__discounted-price">
+                        ₹{product.actual_price}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );

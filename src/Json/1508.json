@@ -2,11 +2,11 @@
     "name":"OnePlus 10R 5G (8GB RAM, 128GB, Sierra Black)",
     "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662436320/Croma%20Assets/Communication/Mobiles/Images/252417_s8umxt.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
     "prod_cat":"mb",
+    "prod_id":"1508",
     "actual_price":"38,999",
     "disc_price":"34,999",
     "rating":4.5,
     "total_ratings":33,
-    "prod_id":"1508",
     "prod_desc":{
         "heading":"Why BUY OnePlus 10R 5G",
         "features":[
@@ -79,6 +79,43 @@
             "title":"Security (Lock)",
             "desc":"Password | Pattern | PIN | Fingerprint Sensor | Face Unlock"
         }
+    ],
+    "similar_products":[
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666992109/Croma%20Assets/Communication/Mobiles/Images/250716_rea31a.png/mxw_600,f_auto",
+            "name":"OnePlus 10 Pro 5G (12GB RAM, 256GB, Emerald Forest)",
+            "actual_price":"65,999",
+            "discounted_price":"71,999",
+            "rating":4.9,
+            "total_rating":32,
+            "prod_id":"1501"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1675347118/Croma%20Assets/Communication/Mobiles/Images/268878_dygou8.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"Samsung Galaxy S23 Plus 5G (8GB RAM, 256GB, Cream)",
+            "actual_price":"116,999",
+            "discounted_price":"94,999",
+            "rating":4.4,
+            "total_rating":51,
+            "prod_id":"1503"
+        },
+        {
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662438528/Croma%20Assets/Communication/Mobiles/Images/252195_nojq8m.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "name":"Xiaomi 12 Pro 5G (12GB RAM, 256GB, Opera Mauve)",
+            "actual_price":"84,999",
+            "discounted_price":"57,999",
+            "rating":4,
+            "total_rating":3,
+            "prod_id":"1504"
+        },
+        { "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662444804/Croma%20Assets/Communication/Mobiles/Images/247134_dnhupm.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Xiaomi 11i 5G (8GB RAM, 128GB, Pacific Pearl)",
+        "actual_price":"31,999",
+        "discounted_price":"26,099",
+        "rating":43,
+        "total_rating":4.1,
+        "prod_id":"1505"
+    }
     ],
     "faqs":[
         {

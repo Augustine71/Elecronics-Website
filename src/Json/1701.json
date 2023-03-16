@@ -1,7 +1,8 @@
 {
-    "name":"NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Blue)",
+    "name":"NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM)",
     "prod_img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667849714/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/245650_0_ksd3sp.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
-    "prod_cat":"lp",
+    "prod_cat":"tb",
+    "prod_id":"1701",
     "actual_price":"19,499",
     "disc_price":"15,649",
     "rating":5,

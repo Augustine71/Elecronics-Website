@@ -67,13 +67,11 @@ export const CustomerReviews = () => {
                 <Rate allowHalf defaultValue={2.5} />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
-                  Hair loss woes are not uncommon. I was going through a
-                  consistent hair loss problem and during the monsoon....it was
-                  carnage!! Its been almost 20 days im consuming these gummies
-                  on a 3 month supply. And voila, the results are so damn good.
-                  The results were visible within 8 days of usage. From numerous
-                  hair strands i could see falling in a day to just a negligible
-                  figure in a week.
+                  I have been using this device for a few weeks now and it has
+                  exceeded my expectations. The battery life is impressive and
+                  the processing power is lightning fast. The display is also
+                  crystal clear and makes streaming movies and videos a true
+                  delight.
                 </div>
                 <div className="customers_person">
                   <div className="customers_person-name">Bhavin</div>
@@ -88,24 +86,23 @@ export const CustomerReviews = () => {
               <div className="customers_container">
                 <div className="customers_together">
                   <img
-                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703394/Croma%20Assets/Communication/Mobiles/Images/261991_8_kk810c.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto"
+                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664374836/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/263024_mcyrnq.png/mxw_2048,f_auto"
                     className="customers_prod-img"
                   />
                   <div className="customers_name">
-                    Apple iPhone 14 Pro (128GB, Deep Purple)
+                    boAt Airdopes 113 Wireless Gaming Earbuds
                   </div>
                 </div>
 
                 <Rate allowHalf defaultValue={2.5} />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
-                  Hair loss woes are not uncommon. I was going through a
-                  consistent hair loss problem and during the monsoon....it was
-                  carnage!! Its been almost 20 days im consuming these gummies
-                  on a 3 month supply. And voila, the results are so damn good.
-                  The results were visible within 8 days of usage. From numerous
-                  hair strands i could see falling in a day to just a negligible
-                  figure in a week.
+                  The new gadget is a great addition to my collection. It’s
+                  sleek and stylish, and the performance is exceptional. The
+                  battery life is impressive, and the screen is bright and
+                  clear. It’s perfect for streaming movies and playing games.
+                  The device is also lightweight, making it easy to carry
+                  around. Overall, I’m very happy with my purchase.
                 </div>
                 <div className="customers_person">
                   <div className="customers_person-name">Bhavin</div>
@@ -120,24 +117,24 @@ export const CustomerReviews = () => {
               <div className="customers_container">
                 <div className="customers_together">
                   <img
-                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703400/Croma%20Assets/Communication/Mobiles/Images/261991_4_dp8elq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto"
+                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667853240/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/233723_0_wuj5kk.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto"
                     className="customers_prod-img"
                   />
                   <div className="customers_name">
-                    Apple iPhone 14 Pro (128GB, Deep Purple)
+                    Lenovo Yoga Smart Tab Wi-Fi + 4G Android Tablet
                   </div>
                 </div>
 
                 <Rate allowHalf defaultValue={2.5} />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
-                  Hair loss woes are not uncommon. I was going through a
-                  consistent hair loss problem and during the monsoon....it was
-                  carnage!! Its been almost 20 days im consuming these gummies
-                  on a 3 month supply. And voila, the results are so damn good.
-                  The results were visible within 8 days of usage. From numerous
-                  hair strands i could see falling in a day to just a negligible
-                  figure in a week.
+                  The latest electronic device is a game-changer. The graphics
+                  are amazing, and the sound quality is top-notch. The user
+                  interface is intuitive, and the device is incredibly fast.
+                  It’s perfect for multitasking and can handle even the most
+                  demanding applications. The battery life is also impressive,
+                  and the device charges quickly. I highly recommend this
+                  product to anyone looking for a high-end electronic device.
                 </div>
                 <div className="customers_person">
                   <div className="customers_person-name">Bhavin</div>
@@ -152,21 +149,21 @@ export const CustomerReviews = () => {
               <div className="customers_container">
                 <div className="customers_together">
                   <img
-                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663177008/Croma%20Assets/Communication/Mobiles/Images/261991_2_o2tjlp.jpg/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto"
+                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664416536/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257130_0_htx0fu.png/mxw_200,s_jp2,s_videoimg,ns_atwebp,f_auto"
                     className="customers_prod-img"
                   />
                   <div className="customers_name">
-                    Apple iPhone 14 Pro (128GB, Deep Purple)
+                    ASUS TUF Gaming A17 FA706IC-HX036W AMD Ryzen 7
                   </div>
                 </div>
 
                 <Rate allowHalf defaultValue={2.5} />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
-                  Hair loss woes are not uncommon. I was going through a
-                  consistent hair loss problem and during the monsoon....it was
-                  carnage!! Its been almost 20 days im consuming these gummies
-                  on a 3 month supply.
+                  This device is perfect for gaming and multimedia. The graphics
+                  are stunning and the processing power is lightning fast. I
+                  also appreciate the spacious storage capacity, which allows me
+                  to store all my games and media without worry.
                 </div>
                 <div className="customers_person">
                   <div className="customers_person-name">Bhavin</div>

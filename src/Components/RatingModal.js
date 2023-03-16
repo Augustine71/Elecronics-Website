@@ -3,14 +3,19 @@ import { ModalContext } from "./ModalContext";
 import { Rate } from "antd";
 import { AiFillCloseCircle } from "react-icons/ai";
 
+import { fs } from "../Config/Config";
+
 export const RatingModal = () => {
-  const { ratingModalIsOpen, toggleModalRating } = useContext(ModalContext);
+  const { ratingModalIsOpen, toggleModalRating, ratingProps } =
+    useContext(ModalContext);
+  console.log(ratingProps);
 
   const [formValues, setFormValues] = useState({
     email: "",
     name: "",
     title: "",
     desc: "",
+    rating: 1,
   });
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
@@ -35,6 +40,31 @@ export const RatingModal = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    console.log(formValues);
+    fs.collection(ratingProps)
+      .add({
+        name: formValues.name,
+        email: formValues.email,
+        title: formValues.title,
+        desc: formValues.desc,
+        rating: formValues.rating,
+        date: new Date().toLocaleDateString("en-US"),
+      })
+      .then((docRef) => {
+        console.log("Document added with ID: ", docRef.id);
+        setFormValues({
+          email: "",
+          name: "",
+          title: "",
+          desc: "",
+          rating: 1,
+        });
+        toggleModalRating();
+      })
+      .catch((error) => {
+        alert("Error submitting review. Try Again");
+        console.error("Error adding document: ", error);
+      });
   };
 
   useEffect(() => {
@@ -64,10 +94,14 @@ export const RatingModal = () => {
     return errors;
   };
 
+  const handleRateChange = (value) => {
+    setFormValues({ ...formValues, rating: value });
+  };
+
   return (
     <div
       className="ratings__modal"
-      onClick={toggleModalRating}
+      onClick={() => toggleModalRating()}
       style={{ display: ratingModalIsOpen ? "flex" : "none" }}
     >
       <div
@@ -88,7 +122,11 @@ export const RatingModal = () => {
                 Rate this Product
               </label>
               <div class="stars-wrap">
-                <Rate allowClear={false} defaultValue={1} />
+                <Rate
+                  allowClear={false}
+                  value={formValues.rating}
+                  onChange={handleRateChange}
+                />
               </div>
             </div>
             <div class="ratings__input-section">

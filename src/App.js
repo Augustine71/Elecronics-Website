@@ -1,22 +1,17 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Components/Home";
-import { Login } from "./Components/Login";
-import { Signup } from "./Components/Signup";
 import { NotFound } from "./Components/NotFound";
 import { Cart } from "./Components/Cart";
 import { AllProducts } from "./Components/AllProducts";
 import { MyOrders } from "./Components/MyOrders";
 import { ProductDisplayPage } from "./Components/ProductDisplayPage";
 import { OrderDetails } from "./Components/OrderDetails";
-import { LogInModal } from "./Components/LogInModal";
-import { SignUpNModal } from "./Components/SignUpModal";
+import { SignUpModal } from "./Components/SignUpModal";
 import { RatingModal } from "./Components/RatingModal";
 import { AddToCart } from "./Components/AddToCart";
 
 import { ModalProvider } from "./Components/ModalContext";
-
-import { Compo } from "./Components/Compo";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -44,19 +39,15 @@ export const App = () => {
       <ModalProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/my-orders" element={<MyOrders />} />
           <Route path="/order-details/:orderId" element={<OrderDetails />} />
           <Route path="/all-products" element={<AllProducts />} />
-          <Route path="/compcheck" element={<Compo />} />
           <Route path="/dp/:productId" element={<ProductDisplayPage />} />
           <Route path="/add-to-cart/:productId" element={<AddToCart />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-        <LogInModal />
-        <SignUpNModal />
+        <SignUpModal />
         <RatingModal />
       </ModalProvider>
     </BrowserRouter>

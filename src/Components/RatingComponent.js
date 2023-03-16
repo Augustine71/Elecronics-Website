@@ -1,10 +1,36 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Rate } from "antd";
+import { DummyRatings } from "./DummyRatings";
+import { RatingReview } from "./RatingReview";
+
+import { fs } from "../Config/Config";
 
 import { ModalContext } from "./ModalContext";
 
 export const RatingComponent = (props) => {
   const { toggleModalRating } = useContext(ModalContext);
+
+  const [documents, setDocuments] = useState([]);
+
+  const [visibleChildren, setVisibleChildren] = useState(3);
+
+  const showMore = () => {
+    setVisibleChildren((prevVisibleChildren) => prevVisibleChildren + 5);
+  };
+
+  useEffect(() => {
+    const unsubscribe = fs
+      .collection(props.prod_id)
+      .onSnapshot((querySnapshot) => {
+        const data = [];
+        querySnapshot.forEach((doc) => {
+          data.push(doc.data());
+        });
+        setDocuments(data);
+      });
+
+    return unsubscribe;
+  }, []);
 
   return (
     <div className="ratings__main-container">
@@ -27,50 +53,25 @@ export const RatingComponent = (props) => {
         </div>
       </div>
       <div className="ratings__reviews-container">
-        <div className="ratings__reviews-container-wrapper">
-          <span class="mob__title"> Very nice shampoo</span>
-          <span class="review__body">
-            makes my hair so soft and controls hair fall.
-          </span>
-          <div className="ratings__reviews-container-left-wrapper">
-            <div class="ratings-and-reviews__bottom-left">
-              <div class="ratings-and-reviews__author">
-                <div>BHAVIN</div>
-                <div>
-                  <img
-                    src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
-                    alt="verified mark"
-                  />
-                </div>
-              </div>
-              <div class="ratings-and-reviews__date">02/01/2023</div>
-            </div>
-          </div>
-        </div>
-        <div className="ratings__reviews-container-wrapper">
-          <span class="mob__title"> Very nice shampoo</span>
-          <span class="review__body">
-            makes my hair so soft and controls hair fall.
-          </span>
-          <div className="ratings__reviews-container-left-wrapper">
-            <div class="ratings-and-reviews__bottom-left">
-              <div class="ratings-and-reviews__author">
-                <div>BHAVIN</div>
-                <div>
-                  <img
-                    src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
-                    alt="verified mark"
-                  />
-                </div>
-              </div>
-              <div class="ratings-and-reviews__date">02/01/2023</div>
-            </div>
-          </div>
-        </div>
+        {documents === null ? (
+          <DummyRatings />
+        ) : (
+          documents
+            .slice(0, visibleChildren)
+            .map((child, index) => <RatingReview data={child} key={index} />)
+        )}
       </div>
+      {visibleChildren < documents.length && (
+        <div
+          className={`ratings__write-a-review load-more ${props.prod_cat}`}
+          onClick={showMore}
+        >
+          Load More
+        </div>
+      )}
       <div
         className={`ratings__write-a-review ${props.prod_cat}`}
-        onClick={toggleModalRating}
+        onClick={() => toggleModalRating(props.prod_id)}
       >
         Write a Review
       </div>
