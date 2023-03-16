@@ -1,52 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { Navbar } from "./Navbar";
-import { auth, fs } from "../Config/Config";
-import { CartProducts } from "./CartProducts";
-import { Puma } from "./Puma";
+import React, { useContext, useState, useEffect } from "react";
+import { ModalContext } from "./ModalContext";
+
+import { fs, auth } from "../Config/Config";
+
+import { CheckoutHeader } from "./CheckoutHeader";
+import { CheckoutDetails } from "./CheckoutDetails";
+import { CheckoutItems } from "./CheckoutItems";
 import { useNavigate } from "react-router-dom";
+import shortid from "shortid";
 
 import { toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
-import { Modal } from "./Modal";
 
 export const Cart = () => {
   const navigate = useNavigate();
 
-  // show modal state
-  const [showModal, setShowModal] = useState(false);
-
-  // trigger modal
-  const triggerModal = () => {
-    setShowModal(true);
-  };
-
-  // hide modal
-  const hideModal = () => {
-    setShowModal(false);
-  };
-
-  // getting current user function
-  function GetCurrentUser() {
-    const [user, setUser] = useState(null);
-    useEffect(() => {
-      auth.onAuthStateChanged((user) => {
-        if (user) {
-          fs.collection("users")
-            .doc(user.uid)
-            .get()
-            .then((snapshot) => {
-              setUser(snapshot.data().FullName);
-            });
-        } else {
-          setUser(null);
-        }
-      });
-    }, []);
-    return user;
-  }
-
-  const user = GetCurrentUser();
-  // console.log(user);
+  const { totalProducts, user } = useContext(ModalContext);
 
   // state of cart products
   const [cartProducts, setCartProducts] = useState([]);
@@ -55,9 +25,9 @@ export const Cart = () => {
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
-        fs.collection("Cart " + user.uid).onSnapshot((snapshot) => {
+        fs.collection("Cart " + user.phoneNumber).onSnapshot((snapshot) => {
           const newCartProduct = snapshot.docs.map((doc) => ({
-            ID: doc.id,
+            ID: doc.product_id,
             ...doc.data(),
           }));
           setCartProducts(newCartProduct);
@@ -68,61 +38,30 @@ export const Cart = () => {
     });
   }, []);
 
-  // console.log(cartProducts);
-
-  // getting the qty from cartProducts in a seperate array
-  const qty = cartProducts.map((cartProduct) => {
-    return cartProduct.qty;
-  });
-
-  // reducing the qty in a single value
-  const reducerOfQty = (accumulator, currentValue) =>
-    accumulator + currentValue;
-
-  const totalQty = qty.reduce(reducerOfQty, 0);
-
-  // console.log(totalQty);
-
-  // getting the TotalProductPrice from cartProducts in a seperate array
-  const price = cartProducts.map((cartProduct) => {
-    return cartProduct.TotalProductPrice;
-  });
-
-  // reducing the price in a single value
-  const reducerOfPrice = (accumulator, currentValue) =>
-    accumulator + currentValue;
-
-  const totalPrice = price.reduce(reducerOfPrice, 0);
-
-  // state of totalProducts
-  const [totalProducts, setTotalProducts] = useState(0);
-  // getting cart products
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        fs.collection("Cart " + user.uid).onSnapshot((snapshot) => {
-          const qty = snapshot.docs.length;
-          setTotalProducts(qty);
-        });
-      }
-    });
-  }, []);
-
-  // global variable
-  let Product;
+  console.log(cartProducts);
 
   // cart product increase function
   const cartProductIncrease = (cartProduct) => {
     // console.log(cartProduct);
-    Product = cartProduct;
-    Product.qty = Product.qty + 1;
-    Product.TotalProductPrice = Product.qty * Product.price;
+    const newQty = cartProduct.qty + 1;
+    const newPrice =
+      newQty * parseInt(cartProduct.disc_price.replace(/,/g, ""), 10);
+    const subTotal =
+      newQty * parseInt(cartProduct.actual_price.replace(/,/g, ""), 10);
+    const newDiscount =
+      newQty * parseInt(cartProduct.actual_price.replace(/,/g, ""), 10) -
+      newQty * parseInt(cartProduct.disc_price.replace(/,/g, ""), 10);
     // updating in database
     auth.onAuthStateChanged((user) => {
       if (user) {
-        fs.collection("Cart " + user.uid)
-          .doc(cartProduct.ID)
-          .update(Product)
+        fs.collection("Cart " + user.phoneNumber)
+          .doc(cartProduct.prod_id)
+          .update({
+            qty: newQty,
+            TotalProductPrice: newPrice,
+            SuTotal: subTotal,
+            Discount: newDiscount,
+          })
           .then(() => {
             console.log("increment added");
           });
@@ -134,141 +73,219 @@ export const Cart = () => {
 
   // cart product decrease functionality
   const cartProductDecrease = (cartProduct) => {
-    Product = cartProduct;
-    if (Product.qty > 1) {
-      Product.qty = Product.qty - 1;
-      Product.TotalProductPrice = Product.qty * Product.price;
+    if (cartProduct.qty === 1) {
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          fs.collection("Cart " + user.phoneNumber)
+            .doc(cartProduct.prod_id)
+            .delete()
+            .then(() => {
+              console.log("successfully deleted");
+            });
+        }
+      });
+    } else {
+      const newQty = cartProduct.qty - 1;
+      const newPrice =
+        newQty * parseInt(cartProduct.disc_price.replace(/,/g, ""), 10);
+      const subTotal =
+        newQty * parseInt(cartProduct.actual_price.replace(/,/g, ""), 10);
+      const newDiscount =
+        newQty * parseInt(cartProduct.actual_price.replace(/,/g, ""), 10) -
+        newQty * parseInt(cartProduct.disc_price.replace(/,/g, ""), 10);
       // updating in database
       auth.onAuthStateChanged((user) => {
         if (user) {
-          fs.collection("Cart " + user.uid)
-            .doc(cartProduct.ID)
-            .update(Product)
+          fs.collection("Cart " + user.phoneNumber)
+            .doc(cartProduct.prod_id)
+            .update({
+              qty: newQty,
+              TotalProductPrice: newPrice,
+              SuTotal: subTotal,
+              Discount: newDiscount,
+            })
             .then(() => {
-              console.log("decrement");
+              console.log("decrement added");
             });
         } else {
-          console.log("user is not logged in to decrement");
+          console.log("user is not logged in to increment");
         }
       });
     }
   };
 
-  async function displayRazorpay() {
-    //     let a= [];
-    //     const uid = auth.currentUser.uid;
-    //     const cartData = await fs.collection('Cart ' + uid).get();
-    //     for(var snap of cartData.docs){
-    //         var data = snap.data();
-    //         data.ID = snap.id;
-    //         a.push(data);
-    //          await fs.collection('Cart ' + uid).doc(snap.id).delete();
-    //     }
-    //     await fs.collection('Cart'+ user).add({
-    //         FullName: user,
-    //         OrderId: "sda",
-    //         CartPrice: totalPrice,
-    //         CartQty: totalQty,
-    //         cartValues: a
-    //     })
-    // }
+  const [discount, setDiscount] = useState(0);
+  const [subTotal, setSubTotal] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
-    const data = await fetch("http://localhost:3001/razorpay", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-      },
-      body: JSON.stringify({
-        amount: totalPrice,
-      }),
-    }).then((t) => t.json());
+  const collectionRef = fs.collection("Cart +919743904207");
 
-    console.log(data);
+  collectionRef.get().then((querySnapshot) => {
+    let Discount = 0;
+    let SubTotal = 0;
+    let TotalPrice = 0;
 
-    const options = {
-      key: "rzp_test_yBoqfRWvDQWfYD",
-      currency: "INR",
-      amount: data.amount,
-      name: "E-Commerce",
-      description: "Wallet Transaction",
-      order_id: data.id,
-      handler: async function (response) {
-        console.log(response);
-        let a = [];
-        const uid = auth.currentUser.uid;
-        const cartData = await fs.collection("Cart " + uid).get();
-        for (var snap of cartData.docs) {
-          var data = snap.data();
-          data.ID = snap.id;
-          a.push(data);
+    querySnapshot.forEach((doc) => {
+      Discount += doc.data().Discount;
+      SubTotal += doc.data().SuTotal;
+      TotalPrice += doc.data().TotalProductPrice;
+    });
+    setDiscount(Discount);
+    setSubTotal(SubTotal);
+    setTotalPrice(TotalPrice);
+  });
+
+  //CheckOutDetails
+  const initialFormValues = {
+    name: "",
+    phoneNumber: "",
+    pincode: "",
+    address: "",
+  };
+
+  const [formValues, setFormValues] = useState(initialFormValues);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    let isValid = true;
+    let errors = {};
+
+    if (!formValues.name) {
+      errors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formValues.phoneNumber) {
+      errors.phoneNumber = "Phone number is required";
+      isValid = false;
+    } else if (!/^[0-9]{10}$/.test(formValues.phoneNumber)) {
+      errors.phoneNumber = "Phone number should be 10 digits";
+      isValid = false;
+    }
+
+    if (!formValues.pincode) {
+      errors.pincode = "Pincode is required";
+      isValid = false;
+    } else if (!/^[0-9]{6}$/.test(formValues.pincode)) {
+      errors.pincode = "Pincode should be 6 digits";
+      isValid = false;
+    }
+
+    if (!formValues.address) {
+      errors.address = "Address is required";
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+      // Submit form
+      console.log("Form is valid");
+      const amount = totalPrice > 500000 ? 500000 : totalPrice;
+      const data = await fetch("http://localhost:3001/razorpay", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+        },
+        body: JSON.stringify({
+          amount,
+        }),
+      }).then((t) => t.json());
+
+      console.log(data);
+
+      const options = {
+        key: "rzp_test_Ba6En9M6HuVKxc",
+        currency: "INR",
+        amount: data.amount,
+        name: "E-Commerce",
+        description: "Wallet Transaction",
+        order_id: data.id,
+        handler: async function (response) {
+          console.log(response);
+          const userRef = user.phoneNumber;
+          const orderId = shortid.generate();
+          console.log(orderId);
+          const cartData = await fs.collection("Cart " + userRef).get();
+          const cartItems = [];
+          cartData.forEach((doc) => {
+            const data = doc.data();
+            cartItems.push(data);
+            doc.ref
+              .delete()
+              .then(() => {
+                console.log("Document successfully deleted!");
+              })
+              .catch((error) => {
+                console.error("Error removing document: ", error);
+              });
+          });
+
           await fs
-            .collection("Cart " + uid)
-            .doc(snap.id)
-            .delete();
-        }
-        await fs.collection("Cart " + user).add({
-          FullName: user,
-          OrderId: response.razorpay_order_id,
-          CartPrice: totalPrice,
-          CartQty: totalQty,
-          cartValues: a,
-        });
-        navigate("/");
-        toast.success("Your order has been placed successfully", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: false,
-          progress: undefined,
-        });
-      },
-    };
+            .collection("Order " + userRef)
+            .doc(response.razorpay_order_id)
+            .set({
+              paymentId: response.razorpay_payment_id,
+              order_id: orderId,
+              name: formValues.name,
+              phoneNumber: formValues.phoneNumber,
+              pincode: formValues.pincode,
+              address: formValues.address,
+              CartPrice: totalPrice,
+              CartDiscount: discount,
+              CartSubTotal: subTotal,
+              CartQty: totalProducts,
+              orderDate: new Date().toISOString().slice(0, 10),
+              cartValues: cartItems,
+            });
+          navigate("/");
+          toast.success("Your order has been placed successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+          });
+        },
+      };
 
-    const paymentObject = new window.Razorpay(options);
-    paymentObject.open();
-  }
+      const paymentObject = new window.Razorpay(options);
+      paymentObject.open();
+      console.log(paymentObject);
+    } else {
+      console.log("Form is invalid");
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   return (
-    <>
-      {/* <Navbar user={user} totalProducts={totalProducts}/>            */}
-      <Puma />
-      {/* {cartProducts.length > 0 && (
-                <div className='container-fluid'>
-                    <h1 className='text-center'>Cart</h1>
-                    <div className='products-box'>
-                        <CartProducts cartProducts={cartProducts}  cartProductIncrease={cartProductIncrease}
-                           cartProductDecrease={cartProductDecrease}/>
-                    </div>
-                    <div className='summary-box'>
-                        <h5>Cart Summary</h5>
-                        <br></br>
-                        <div>
-                        Total No of Products: <span>{totalQty}</span>
-                        </div>
-                        <div>
-                        Total Price to Pay: <span>$ {totalPrice}</span>
-                        </div>
-                        <br></br>
-                        <button className='btn btn-secondary btn-md' 
-                        onClick={displayRazorpay}>Cash on Delivery</button>
-                        <h6 className='text-center'
-                        style={{marginTop: 7+'px'}}>OR</h6>
-                        <button className='btn btn-secondary btn-md' 
-                        onClick={()=>triggerModal()}>Cash on Delivery</button>
-                    </div>   
-                </div>
-            )}
-            {cartProducts.length < 1 && (
-                <div className='container-fluid'>No products to show</div>
-            ) }   
-
-             {showModal===true&&(
-                <Modal TotalPrice={totalPrice} totalQty={totalQty}
-                    hideModal={hideModal}
-                />
-            )}             */}
-    </>
+    <div class="checkout-container">
+      <CheckoutHeader />
+      <CheckoutDetails
+        formValues={formValues}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        errors={errors}
+      />
+      <CheckoutItems
+        cartProducts={cartProducts}
+        cartProductIncrease={cartProductIncrease}
+        cartProductDecrease={cartProductDecrease}
+        Discount={discount}
+        SubTotal={subTotal}
+        TotalPrice={totalPrice}
+        totalItems={totalProducts}
+      />
+    </div>
   );
 };
