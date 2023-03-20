@@ -3,7 +3,7 @@ import React from "react";
 export const PhoneNumber = (props) => {
   return (
     <div className="phone__number-container">
-      <div className="phone__number-header">Login Or SignUp</div>
+      <div className="phone__number-header">Login or SignUp</div>
       <div className="phone__number-subheading">
         Enter your phone number to verify yourself
       </div>
