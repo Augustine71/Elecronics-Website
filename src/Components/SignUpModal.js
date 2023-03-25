@@ -85,11 +85,14 @@ export const SignUpModal = () => {
         setFirstImeUser(true);
       }
     });
+    console.log("Attempting to sign in with phone number...");
     signInWithPhoneNumber(auth, formattedNum, appVerifier)
       .then((confirmationResult) => {
+        console.log("hello9");
         // SMS sent. Prompt user to type the code from the message, then sign the
         // user in with confirmationResult.confirm(code).
         window.confirmationResult = confirmationResult;
+        console.log(confirmationResult);
         // ...
       })
       .catch((error) => {
