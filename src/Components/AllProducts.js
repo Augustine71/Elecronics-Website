@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import AllProductsJson from "../Json/AllProducts.json";
 
@@ -8,7 +8,14 @@ import { AllProductsButtons } from "./AllProductsButtons";
 import { ProductCard } from "./ProductCard";
 
 export const AllProducts = () => {
-  const [activeButton, setActiveButton] = useState(0);
+  const [activeButton, setActiveButton] = useState("lp");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setActiveButton(hash);
+    }
+  }, []);
   const handleButtonClick = (data) => {
     setActiveButton(data);
     console.log(data);
@@ -23,8 +30,8 @@ export const AllProducts = () => {
           activeButton={activeButton}
           handleButtonClick={handleButtonClick}
         />
-        {AllProductsJson.map((products, index) =>
-          index === activeButton ? (
+        {AllProductsJson.map((products) =>
+          products.cat === activeButton ? (
             <ProductCard activeButton={activeButton} products={products} />
           ) : null
         )}

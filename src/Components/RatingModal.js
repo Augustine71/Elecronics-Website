@@ -118,7 +118,7 @@ export const RatingModal = () => {
         <div class="ratings__writeReviewstyles">
           <form class="write-review__form" onSubmit={handleSubmit}>
             <div class="ratings__Inputstyles">
-              <label class="input-label" for="rating">
+              <label class="input-label" htmlFor="rating">
                 Rate this Product
               </label>
               <div class="stars-wrap">
@@ -131,7 +131,7 @@ export const RatingModal = () => {
             </div>
             <div class="ratings__input-section">
               <div class="input-section">
-                <label class="input-label" for="write-review-name">
+                <label class="input-label" htmlFor="write-review-name">
                   Name
                 </label>
                 <input
@@ -152,7 +152,7 @@ export const RatingModal = () => {
             </div>
             <div class="ratings__input-section">
               <div class="input-section">
-                <label class="input-label" for="write-review-email">
+                <label class="input-label" htmlFor="write-review-email">
                   Email
                 </label>
                 <input
@@ -174,7 +174,7 @@ export const RatingModal = () => {
             </div>
             <div class="ratings__input-section">
               <div class="input-section">
-                <label class="input-label" for="write-review-title">
+                <label class="input-label" htmlFor="write-review-title">
                   Review Title
                 </label>
                 <input
@@ -197,7 +197,7 @@ export const RatingModal = () => {
             </div>
             <div class="ratings__input-section">
               <div class="input-section">
-                <label class="input-label" for="write-review-description">
+                <label class="input-label" htmlFor="write-review-description">
                   Review Description
                 </label>
                 <textarea

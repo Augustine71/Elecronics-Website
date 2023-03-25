@@ -6,35 +6,35 @@ export const AllProductsButtons = ({ handleButtonClick, activeButton }) => {
       <div class="all-products__section-btn-buttons">
         <button
           className={`${
-            activeButton === 0 ? "active " : ""
+            activeButton === "lp" ? "active " : ""
           } all-products__section-btn-btn lp`}
-          onClick={() => handleButtonClick(0)}
+          onClick={() => handleButtonClick("lp")}
         >
           Laptops
         </button>
         <button
           className={`${
-            activeButton === 1 ? "active " : ""
+            activeButton === "mb" ? "active " : ""
           } all-products__section-btn-btn mb`}
-          onClick={() => handleButtonClick(1)}
+          onClick={() => handleButtonClick("mb")}
         >
           Mobiles
         </button>
         <button
           className={`${
-            activeButton === 2 ? "active " : ""
+            activeButton === "tb" ? "active " : ""
           } all-products__section-btn-btn tb`}
-          onClick={() => handleButtonClick(2)}
+          onClick={() => handleButtonClick("tb")}
         >
           Tablets
         </button>
         <button
           className={`${
-            activeButton === 3 ? "active " : ""
+            activeButton === "ap" ? "active " : ""
           } all-products__section-btn-btn ap`}
-          onClick={() => handleButtonClick(3)}
+          onClick={() => handleButtonClick("ap")}
         >
-          Wireless Earphones
+          Earbuds
         </button>
       </div>
     </div>

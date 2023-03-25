@@ -3,7 +3,7 @@ import React from "react";
 export const PhoneNumber = (props) => {
   return (
     <div className="phone__number-container">
-      <div className="phone__number-header">Login Or SignUp</div>
+      <div className="phone__number-header">Login or SignUp</div>
       <div className="phone__number-subheading">
         Enter your phone number to verify yourself
       </div>
@@ -21,11 +21,11 @@ export const PhoneNumber = (props) => {
         </div>
       )}
       <div class="phone__number-form_message">
-        We will send OTP to this number
+        A verification OTP will be sent to this number
       </div>
       <div
         class={`phone__number-submit-button ${
-          !props.isPhoneNumberValid == true ? "active" : ""
+          !props.isPhoneNumberValid === true ? "active" : ""
         }`}
         onClick={props.requestOtp}
       >

@@ -82,6 +82,8 @@ export const NavigationBar = (props) => {
       .catch((error) => {
         isSignedin(true);
       });
+    setShowIcon(!showIcon);
+    setIsOpen(!isOpen);
   };
 
   const handleCartIconClick = () => {
@@ -96,7 +98,7 @@ export const NavigationBar = (props) => {
     <>
       <div className="navigationBar__header">
         <Link className="navigationBar__logo" to="/">
-          <img src="https://imgur.com/AkgGUK4.jpg" alt="website-logo" />
+          <img src="https://imgur.com/5C66rTg.jpg" alt="website-logo" />
         </Link>
 
         <div className={`navigationBar__navbar ${isOpen ? "open" : ""}`}>
@@ -106,53 +108,65 @@ export const NavigationBar = (props) => {
             </Link>
           </div>
           <div
-            class="navbar__dropdown"
+            className="navbar__dropdown"
             onClick={() => handleDropdownClick("dropdown1")}
             onMouseEnter={() => handleDropdownMouseEnter("dropdown1")}
             onMouseLeave={() => handleDropdownMouseLeave("dropdown1")}
           >
-            <div class="navbar__label-container navv__item">
+            <div className="navbar__label-container navv__item">
               <div
-                class={`navbar__dropdown-arrow-two ${
+                className={`navbar__dropdown-arrow-two ${
                   dropdowns.dropdown1.isOpen ? "show" : ""
                 }`}
               ></div>
-              <div class="navbar__dropdown-title">All Products</div>
+              <div className="navbar__dropdown-title">All Products</div>
             </div>
             {dropdowns.dropdown1.isOpen && (
               <div className="navbar__dropdown-linksWrapper">
-                <Link class="navbar__dropdown-linkItem" to="/all-products">
-                  <div class="dropdown-link">
-                    <div class="dropdown-description">
-                      <div class="dropdown-label-tag">
-                        <div class="dropdown-label">Tablets</div>
+                <Link
+                  className="navbar__dropdown-linkItem"
+                  to="/all-products#tb"
+                >
+                  <div className="dropdown-link">
+                    <div className="dropdown-description">
+                      <div className="dropdown-label-tag">
+                        <div className="dropdown-label">Tablets</div>
                       </div>
                     </div>
                   </div>
                 </Link>
-                <Link class="navbar__dropdown-linkItem" to="/all-products">
-                  <div class="dropdown-link">
-                    <div class="dropdown-description">
-                      <div class="dropdown-label-tag">
-                        <div class="dropdown-label">Mobile</div>
+                <Link
+                  className="navbar__dropdown-linkItem"
+                  to="/all-products#mb"
+                >
+                  <div className="dropdown-link">
+                    <div className="dropdown-description">
+                      <div className="dropdown-label-tag">
+                        <div className="dropdown-label">Mobiles</div>
                       </div>
                     </div>
                   </div>
                 </Link>
-                <Link class="navbar__dropdown-linkItem" to="/all-products">
-                  <div class="dropdown-link">
-                    <div class="dropdown-description">
-                      <div class="dropdown-label-tag">
-                        <div class="dropdown-label">Laptops</div>
+                <Link
+                  className="navbar__dropdown-linkItem"
+                  to="/all-products#lp"
+                >
+                  <div className="dropdown-link">
+                    <div className="dropdown-description">
+                      <div className="dropdown-label-tag">
+                        <div className="dropdown-label">Laptops</div>
                       </div>
                     </div>
                   </div>
                 </Link>
-                <Link class="navbar__dropdown-linkItem" to="/all-products">
-                  <div class="dropdown-link">
-                    <div class="dropdown-description">
-                      <div class="dropdown-label-tag">
-                        <div class="dropdown-label">Acne Control</div>
+                <Link
+                  className="navbar__dropdown-linkItem"
+                  to="/all-products#ap"
+                >
+                  <div className="dropdown-link">
+                    <div className="dropdown-description">
+                      <div className="dropdown-label-tag">
+                        <div className="dropdown-label">Earbuds</div>
                       </div>
                     </div>
                   </div>
@@ -162,26 +176,26 @@ export const NavigationBar = (props) => {
           </div>
           {signedIn ? (
             <div
-              class="navbar__dropdown"
+              className="navbar__dropdown"
               onClick={() => handleDropdownClick("dropdown2")}
               onMouseEnter={() => handleDropdownMouseEnter("dropdown2")}
               onMouseLeave={() => handleDropdownMouseLeave("dropdown2")}
             >
-              <div class="navbar__label-container navv__item">
+              <div className="navbar__label-container navv__item">
                 <div
-                  class={`navbar__dropdown-arrow ${
+                  className={`navbar__dropdown-arrow ${
                     dropdowns.dropdown2.isOpen ? "show" : ""
                   }`}
                 ></div>
-                <div class="navbar__dropdown-title">Hi, {User}</div>
+                <div className="navbar__dropdown-title">Hi, {User}</div>
               </div>
               {dropdowns.dropdown2.isOpen && (
                 <div className="navbar__dropdown-linksWrapper">
-                  <Link class="navbar__dropdown-linkItem" to="/my-orders">
-                    <div class="dropdown-link">
-                      <div class="dropdown-description">
-                        <div class="dropdown-label-tag">
-                          <div class="dropdown-label">My Orders</div>
+                  <Link className="navbar__dropdown-linkItem" to="/my-orders">
+                    <div className="dropdown-link">
+                      <div className="dropdown-description">
+                        <div className="dropdown-label-tag">
+                          <div className="dropdown-label">My Orders</div>
                         </div>
                       </div>
                     </div>
@@ -190,10 +204,10 @@ export const NavigationBar = (props) => {
                     className="navbar__dropdown-linkItem"
                     onClick={handleLogout}
                   >
-                    <div class="dropdown-link">
-                      <div class="dropdown-description">
-                        <div class="dropdown-label-tag">
-                          <div class="dropdown-label">Logout</div>
+                    <div className="dropdown-link">
+                      <div className="dropdown-description">
+                        <div className="dropdown-label-tag">
+                          <div className="dropdown-label">Logout</div>
                         </div>
                       </div>
                     </div>

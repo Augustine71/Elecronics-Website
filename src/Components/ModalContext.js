@@ -48,6 +48,8 @@ export const ModalProvider = ({ children }) => {
           const qty = snapshot.docs.length;
           setTotalProducts(qty);
         });
+      } else {
+        setTotalProducts(0);
       }
       setUser(user);
     });

@@ -1,8 +1,10 @@
 import React from "react";
 import { CustomHomeCard } from "./CustomHomeCard";
 import homeProducts from "../Json/homeProducts.json";
+import { useNavigate } from "react-router-dom";
 
 export const HomePageCategory = () => {
+  const navigate = useNavigate();
   return (
     <>
       {homeProducts.map((products, index) => (
@@ -33,6 +35,7 @@ export const HomePageCategory = () => {
             </div>
             <button
               class={`homePageCategory__ViewAllButtonContainer ${products.cat}`}
+              onClick={() => navigate(`/all-products#${products.cat}`)}
             >
               View All Products
             </button>

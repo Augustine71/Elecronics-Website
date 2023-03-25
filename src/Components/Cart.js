@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ModalContext } from "./ModalContext";
+import cryptoRandomString from "crypto-random-string";
 
 import { fs, auth } from "../Config/Config";
 
@@ -184,31 +185,17 @@ export const Cart = () => {
     event.preventDefault();
     if (validateForm()) {
       // Submit form
-      console.log("Form is valid");
       const amount = totalPrice > 500000 ? 500000 : totalPrice;
-      const data = await fetch("http://localhost:3001/razorpay", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json; charset=utf-8",
-        },
-        body: JSON.stringify({
-          amount,
-        }),
-      }).then((t) => t.json());
-
-      console.log(data);
-
-      const options = {
-        key: "rzp_test_Ba6En9M6HuVKxc",
+      var options = {
+        key: "rzp_test_VxZfUQSS6HarLs",
+        key_secret: "vTQVypYd7a7hLLTM6VuJZJNt",
+        amount: amount * 100,
         currency: "INR",
-        amount: data.amount,
-        name: "E-Commerce",
-        description: "Wallet Transaction",
-        order_id: data.id,
+        name: "STARFOX",
         handler: async function (response) {
-          console.log(response);
           const userRef = user.phoneNumber;
           const orderId = shortid.generate();
+          const orderDoc = cryptoRandomString({ length: 10 });
           console.log(orderId);
           const cartData = await fs.collection("Cart " + userRef).get();
           const cartItems = [];
@@ -227,7 +214,7 @@ export const Cart = () => {
 
           await fs
             .collection("Order " + userRef)
-            .doc(response.razorpay_order_id)
+            .doc("cart_" + orderDoc)
             .set({
               paymentId: response.razorpay_payment_id,
               order_id: orderId,
@@ -254,10 +241,8 @@ export const Cart = () => {
           });
         },
       };
-
-      const paymentObject = new window.Razorpay(options);
-      paymentObject.open();
-      console.log(paymentObject);
+      var pay = new window.Razorpay(options);
+      pay.open();
     } else {
       console.log("Form is invalid");
     }

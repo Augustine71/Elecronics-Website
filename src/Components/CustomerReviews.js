@@ -14,7 +14,7 @@ export const CustomerReviews = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -64,7 +64,7 @@ export const CustomerReviews = () => {
                   </div>
                 </div>
 
-                <Rate allowHalf defaultValue={2.5} />
+                <Rate allowHalf defaultValue={4.5} disabled />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
                   I have been using this device for a few weeks now and it has
@@ -94,7 +94,7 @@ export const CustomerReviews = () => {
                   </div>
                 </div>
 
-                <Rate allowHalf defaultValue={2.5} />
+                <Rate allowHalf defaultValue={4.5} disabled />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
                   The new gadget is a great addition to my collection. It’s
@@ -125,7 +125,7 @@ export const CustomerReviews = () => {
                   </div>
                 </div>
 
-                <Rate allowHalf defaultValue={2.5} />
+                <Rate allowHalf defaultValue={4.5} disabled />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
                   The latest electronic device is a game-changer. The graphics
@@ -157,7 +157,7 @@ export const CustomerReviews = () => {
                   </div>
                 </div>
 
-                <Rate allowHalf defaultValue={2.5} />
+                <Rate allowHalf defaultValue={4.5} disabled />
                 <div className="customers_title">Very good product</div>
                 <div className="customers_desc">
                   This device is perfect for gaming and multimedia. The graphics

@@ -5,6 +5,7 @@ import { HomePageCategory } from "./HomePageCategory";
 import { CustomerReviews } from "./CustomerReviews";
 import { DeliveryInstructions } from "./DeliveryInstructions";
 import { HomeNavigationButtons } from "./HomeNavigationButtons";
+import { Footer } from "./Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -18,7 +19,7 @@ export const Home = () => {
     const section = document.getElementById(`section${index + 1}`);
     const sectionTop = section.getBoundingClientRect().top;
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const height = 100; // set the desired height here
+    const height = 100;
     section.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -38,6 +39,7 @@ export const Home = () => {
       <HomePageCategory />
       <CustomerReviews />
       <DeliveryInstructions />
+      <Footer type={"normal"} />
       <ToastContainer />
     </>
   );

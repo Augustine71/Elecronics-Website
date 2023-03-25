@@ -218,7 +218,7 @@ export const SignUpModal = () => {
           <img
             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiIGZpbGw9IiNFODY2NjkiLz4KPHBhdGggZD0iTTMyLjUgMTcuNUwxNy40OTk5IDMyLjUwMDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTMyLjUgMzIuNUwxNy40OTk5IDE3LjQ5OTkiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg=="
             alt="close-btn"
-            lazy
+            loading="lazy"
           />
         </span>
         <div className="signUp__modal-body">

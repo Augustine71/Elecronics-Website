@@ -42,7 +42,7 @@ export const RatingComponent = (props) => {
               <div class={`rating__container ${props.prod_cat}`}>
                 <span class="number">4.4</span>
                 <div class="rating__styledWrapper">
-                  <Rate allowHalf defaultValue={4.5} />
+                  <Rate allowHalf defaultValue={4.5} disabled />
                 </div>
               </div>
               <div class="rating__total-reviews">
@@ -53,12 +53,12 @@ export const RatingComponent = (props) => {
         </div>
       </div>
       <div className="ratings__reviews-container">
-        {documents === null ? (
-          <DummyRatings />
-        ) : (
+        {documents.length > 0 ? (
           documents
             .slice(0, visibleChildren)
             .map((child, index) => <RatingReview data={child} key={index} />)
+        ) : (
+          <DummyRatings />
         )}
       </div>
       {visibleChildren < documents.length && (
