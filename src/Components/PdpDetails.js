@@ -115,7 +115,11 @@ export const PdpDetails = (props) => {
         </span>
       </div>
       <div className="pdp__details-partition-line"></div>
-      {!isSmallScreen ? <PdpDesktopFeatures /> : ""}
+      {!isSmallScreen ? (
+        <PdpDesktopFeatures features={props.json.features} />
+      ) : (
+        ""
+      )}
       <div className="pdp__btns">
         <div className="pdp__add-to-cart" onClick={() => addToCart(props.json)}>
           Add to Cart

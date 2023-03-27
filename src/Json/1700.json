@@ -81,6 +81,45 @@
             "desc":"7040 mAh Battery With 15 Watts Fast Charging"
         }
     ],
+    "similar_products":[
+          {
+            "name":"SAMSUNG Galaxy Tab A8 Wi-Fi + 4G Android Tablet",
+            "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667854818/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/247597_0_tfo5jj.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+            "prod_id":"1704",
+            "actual_price":"28,799",
+            "discounted_price":"20,999",
+            "rating":4.8,
+            "total_rating":15
+    },
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667849714/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/245650_0_ksd3sp.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Blue)",
+        "actual_price":"19,499",
+        "discounted_price":"15,649",
+        "rating":5,
+        "total_rating":15,
+        "prod_id":"1701"
+    },
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667848350/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/244447_0_onx1rq.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Realme Pad Wi-Fi + 4G Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Grey)",
+        "actual_price":"29,99",
+        "discounted_price":"15,999",
+        "rating":4.8,
+        "total_rating":35,
+        "prod_id":"1702"
+    },
+    {
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667853240/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/233723_0_wuj5kk.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto",
+        "name":"Lenovo Yoga Smart Tab Wi-Fi + 4G Android Tablet (10.1 Inch, 4GB RAM, 64GB ROM, Iron Grey)",
+        "actual_price":"19,999",
+        "discounted_price":"35,500",
+        "rating":4.2,
+        "total_rating":36,
+        "prod_id":"1703"
+    }
+    
+    ],
     "faqs":[
         {
             "que":"How long do Samsung tablets usually last?",

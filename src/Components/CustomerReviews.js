@@ -64,8 +64,8 @@ export const CustomerReviews = () => {
                   </div>
                 </div>
 
-                <Rate allowHalf defaultValue={4.5} disabled />
-                <div className="customers_title">Very good product</div>
+                <Rate allowHalf defaultValue={4} disabled />
+                <div className="customers_title">A Game Changer</div>
                 <div className="customers_desc">
                   I have been using this device for a few weeks now and it has
                   exceeded my expectations. The battery life is impressive and
@@ -74,7 +74,7 @@ export const CustomerReviews = () => {
                   delight.
                 </div>
                 <div className="customers_person">
-                  <div className="customers_person-name">Bhavin</div>
+                  <div className="customers_person-name">Vivek</div>
                   <div className="customers_person_img">
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
@@ -95,7 +95,7 @@ export const CustomerReviews = () => {
                 </div>
 
                 <Rate allowHalf defaultValue={4.5} disabled />
-                <div className="customers_title">Very good product</div>
+                <div className="customers_title">Worth Every Penny</div>
                 <div className="customers_desc">
                   The new gadget is a great addition to my collection. It’s
                   sleek and stylish, and the performance is exceptional. The
@@ -105,7 +105,7 @@ export const CustomerReviews = () => {
                   around. Overall, I’m very happy with my purchase.
                 </div>
                 <div className="customers_person">
-                  <div className="customers_person-name">Bhavin</div>
+                  <div className="customers_person-name">Rajesh</div>
                   <div className="customers_person_img">
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
@@ -125,8 +125,8 @@ export const CustomerReviews = () => {
                   </div>
                 </div>
 
-                <Rate allowHalf defaultValue={4.5} disabled />
-                <div className="customers_title">Very good product</div>
+                <Rate allowHalf defaultValue={4.8} disabled />
+                <div className="customers_title">Simplifying Life</div>
                 <div className="customers_desc">
                   The latest electronic device is a game-changer. The graphics
                   are amazing, and the sound quality is top-notch. The user
@@ -137,7 +137,7 @@ export const CustomerReviews = () => {
                   product to anyone looking for a high-end electronic device.
                 </div>
                 <div className="customers_person">
-                  <div className="customers_person-name">Bhavin</div>
+                  <div className="customers_person-name">Kavya</div>
                   <div className="customers_person_img">
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
@@ -158,7 +158,7 @@ export const CustomerReviews = () => {
                 </div>
 
                 <Rate allowHalf defaultValue={4.5} disabled />
-                <div className="customers_title">Very good product</div>
+                <div className="customers_title">Impressive Performance</div>
                 <div className="customers_desc">
                   This device is perfect for gaming and multimedia. The graphics
                   are stunning and the processing power is lightning fast. I
@@ -166,7 +166,7 @@ export const CustomerReviews = () => {
                   to store all my games and media without worry.
                 </div>
                 <div className="customers_person">
-                  <div className="customers_person-name">Bhavin</div>
+                  <div className="customers_person-name">Sameer</div>
                   <div className="customers_person_img">
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
