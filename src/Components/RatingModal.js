@@ -99,138 +99,149 @@ export const RatingModal = () => {
   };
 
   return (
-    <div
-      className="ratings__modal"
-      onClick={() => toggleModalRating()}
-      style={{ display: ratingModalIsOpen ? "flex" : "none" }}
-    >
-      <div
-        className="ratings__modal-content"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="ratings__modal-cls">
-          <AiFillCloseCircle
-            size={35}
-            color="red"
-            onClick={toggleModalRating}
-          />
-        </div>
-        <div class="ratings__writeReviewstyles">
-          <form class="write-review__form" onSubmit={handleSubmit}>
-            <div class="ratings__Inputstyles">
-              <label class="input-label" htmlFor="rating">
-                Rate this Product
-              </label>
-              <div class="stars-wrap">
-                <Rate
-                  allowClear={false}
-                  value={formValues.rating}
-                  onChange={handleRateChange}
-                />
-              </div>
+    <>
+      {ratingModalIsOpen && (
+        <div
+          className="ratings__modal"
+          onClick={() => toggleModalRating()}
+          style={{ display: ratingModalIsOpen ? "flex" : "none" }}
+        >
+          <div
+            className="ratings__modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="ratings__modal-cls">
+              <AiFillCloseCircle
+                size={35}
+                color="red"
+                onClick={toggleModalRating}
+              />
             </div>
-            <div class="ratings__input-section">
-              <div class="input-section">
-                <label class="input-label" htmlFor="write-review-name">
-                  Name
-                </label>
-                <input
-                  class="input-box"
-                  type="text"
-                  value={formValues.name}
-                  onChange={handleNameChange}
-                  id="write-review-name"
-                  placeholder="Your Name"
-                  name="name"
-                />
-                {formErrors.name ? (
-                  <div className="signUp__error-message">{formErrors.name}</div>
-                ) : (
-                  ""
-                )}
-              </div>
-            </div>
-            <div class="ratings__input-section">
-              <div class="input-section">
-                <label class="input-label" htmlFor="write-review-email">
-                  Email
-                </label>
-                <input
-                  class="input-box "
-                  value={formValues.email}
-                  onChange={handleEmailChange}
-                  id="write-review-email"
-                  placeholder="Your Email"
-                  name="email"
-                />
-                {formErrors.email ? (
-                  <div className="signUp__error-message">
-                    {formErrors.email}
+            <div class="ratings__writeReviewstyles">
+              <form class="write-review__form" onSubmit={handleSubmit}>
+                <div class="ratings__Inputstyles">
+                  <label class="input-label" htmlFor="rating">
+                    Rate this Product
+                  </label>
+                  <div class="stars-wrap">
+                    <Rate
+                      allowClear={false}
+                      value={formValues.rating}
+                      onChange={handleRateChange}
+                    />
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
-            </div>
-            <div class="ratings__input-section">
-              <div class="input-section">
-                <label class="input-label" htmlFor="write-review-title">
-                  Review Title
-                </label>
-                <input
-                  class="input-box "
-                  type="text"
-                  value={formValues.title}
-                  onChange={handleTitleChange}
-                  id="write-review-title"
-                  placeholder="Type title here..."
-                  name="reviewTitle"
-                />
-                {formErrors.title ? (
-                  <div className="signUp__error-message">
-                    {formErrors.title}
+                </div>
+                <div class="ratings__input-section">
+                  <div class="input-section">
+                    <label class="input-label" htmlFor="write-review-name">
+                      Name
+                    </label>
+                    <input
+                      class="input-box"
+                      type="text"
+                      value={formValues.name}
+                      onChange={handleNameChange}
+                      id="write-review-name"
+                      placeholder="Your Name"
+                      name="name"
+                    />
+                    {formErrors.name ? (
+                      <div className="signUp__error-message">
+                        {formErrors.name}
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
+                </div>
+                <div class="ratings__input-section">
+                  <div class="input-section">
+                    <label class="input-label" htmlFor="write-review-email">
+                      Email
+                    </label>
+                    <input
+                      class="input-box "
+                      value={formValues.email}
+                      onChange={handleEmailChange}
+                      id="write-review-email"
+                      placeholder="Your Email"
+                      name="email"
+                    />
+                    {formErrors.email ? (
+                      <div className="signUp__error-message">
+                        {formErrors.email}
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
+                <div class="ratings__input-section">
+                  <div class="input-section">
+                    <label class="input-label" htmlFor="write-review-title">
+                      Review Title
+                    </label>
+                    <input
+                      class="input-box "
+                      type="text"
+                      value={formValues.title}
+                      onChange={handleTitleChange}
+                      id="write-review-title"
+                      placeholder="Type title here..."
+                      name="reviewTitle"
+                    />
+                    {formErrors.title ? (
+                      <div className="signUp__error-message">
+                        {formErrors.title}
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
+                <div class="ratings__input-section">
+                  <div class="input-section">
+                    <label
+                      class="input-label"
+                      htmlFor="write-review-description"
+                    >
+                      Review Description
+                    </label>
+                    <textarea
+                      class="input-box "
+                      id="write-review-description"
+                      placeholder="Type detailed review here..."
+                      value={formValues.desc}
+                      onChange={handleDescChange}
+                      name="reviewDescription"
+                      rows="4"
+                    ></textarea>
+                    {formErrors.desc ? (
+                      <div className="signUp__error-message">
+                        {formErrors.desc}
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
+                <div class="ratings__buttons">
+                  <button type="button" class="ratings__cancel-btn">
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    data-disabled="true"
+                    class="ratings__save-btn"
+                  >
+                    Save
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="ratings__input-section">
-              <div class="input-section">
-                <label class="input-label" htmlFor="write-review-description">
-                  Review Description
-                </label>
-                <textarea
-                  class="input-box "
-                  id="write-review-description"
-                  placeholder="Type detailed review here..."
-                  value={formValues.desc}
-                  onChange={handleDescChange}
-                  name="reviewDescription"
-                  rows="4"
-                ></textarea>
-                {formErrors.desc ? (
-                  <div className="signUp__error-message">{formErrors.desc}</div>
-                ) : (
-                  ""
-                )}
-              </div>
-            </div>
-            <div class="ratings__buttons">
-              <button type="button" class="ratings__cancel-btn">
-                Cancel
-              </button>
-              <button
-                type="submit"
-                data-disabled="true"
-                class="ratings__save-btn"
-              >
-                Save
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };

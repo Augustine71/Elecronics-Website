@@ -3,8 +3,7 @@ import { useParams } from "react-router-dom";
 
 import { MyOrdersBanner } from "./MyOrdersBanner";
 import { OrderHistory } from "./OrderHistory";
-// import { OrderReceipt } from './OrderReceipt';
-// import { Details } from './Details';
+
 export const OrderDetails = () => {
   const { orderId } = useParams();
 

@@ -1258,6 +1258,13 @@ padding: 15px;
     position: relative;
 }
 
+.shipping__details-together div:first-of-type{
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .shipping__details-together::before {
   content: "";
   position: absolute;
@@ -2520,12 +2527,14 @@ line-height: 36px;
   -webkit-box-pack: center;
   justify-content: center;
   overflow: hidden;
+  cursor: pointer !important;
 }
 
 .brand-logo{
   width: 100%;
     height: auto;
     object-fit: contain;
+    cursor: pointer !important;
 }
 
 .footer-sections-container{
@@ -5111,6 +5120,58 @@ margin-bottom: 30px;
 .homepage__banner, .homepage__banner img{
   width: 100%;
 }
+
+.no-poducts-main{
+  width: 320px;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.cart-continue-btn{
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #FFFFFF !important;
+  background: #22548A;
+  border-radius: 16px;
+  padding: 17px 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
 
 @media only screen and (max-width: 600px) {}
 

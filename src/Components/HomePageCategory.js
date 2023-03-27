@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CustomHomeCard } from "./CustomHomeCard";
-import homeProducts from "../Json/homeProducts.json";
+import { fs } from "../Config/Config";
 import { useNavigate } from "react-router-dom";
 
 export const HomePageCategory = () => {
+  const [homeProducts, setHomeProducts] = useState([]);
+
+  useEffect(() => {
+    // Get a reference to the collection
+    const collectionRef = fs.collection("homeProducts");
+
+    // Retrieve the document containing the array data
+    collectionRef
+      .doc("Qixdi3gjJjhgbiSe4f5T")
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          const data = doc.data().homeProducts;
+          setHomeProducts(data);
+        } else {
+          console.log("No such document!");
+        }
+      })
+      .catch((error) => {
+        console.error("Error getting array data: ", error);
+      });
+  }, []);
+
   const navigate = useNavigate();
   return (
     <>

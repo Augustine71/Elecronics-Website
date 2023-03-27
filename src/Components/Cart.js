@@ -1,12 +1,14 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ModalContext } from "./ModalContext";
 import cryptoRandomString from "crypto-random-string";
+import { Link } from "react-router-dom";
 
 import { fs, auth } from "../Config/Config";
 
 import { CheckoutHeader } from "./CheckoutHeader";
 import { CheckoutDetails } from "./CheckoutDetails";
 import { CheckoutItems } from "./CheckoutItems";
+import { NavigationBar } from "./NavigationBar";
 import { useNavigate } from "react-router-dom";
 import shortid from "shortid";
 
@@ -17,7 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const Cart = () => {
   const navigate = useNavigate();
 
-  const { totalProducts, user } = useContext(ModalContext);
+  const { totalProducts, user, toggleModalSignUp } = useContext(ModalContext);
 
   // state of cart products
   const [cartProducts, setCartProducts] = useState([]);
@@ -254,23 +256,37 @@ export const Cart = () => {
   };
 
   return (
-    <div class="checkout-container">
-      <CheckoutHeader />
-      <CheckoutDetails
-        formValues={formValues}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        errors={errors}
-      />
-      <CheckoutItems
-        cartProducts={cartProducts}
-        cartProductIncrease={cartProductIncrease}
-        cartProductDecrease={cartProductDecrease}
-        Discount={discount}
-        SubTotal={subTotal}
-        TotalPrice={totalPrice}
-        totalItems={totalProducts}
-      />
-    </div>
+    <>
+      <NavigationBar />
+      {cartProducts.length === 0 ? (
+        <div className="no-poducts-main">
+          <div className="no-products">
+            No Products Added. Please Add some products.
+          </div>
+          <Link to="/" className="cart-continue-btn">
+            Continue Shopping
+          </Link>
+        </div>
+      ) : (
+        <div class="checkout-container">
+          <CheckoutHeader />
+          <CheckoutDetails
+            formValues={formValues}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            errors={errors}
+          />
+          <CheckoutItems
+            cartProducts={cartProducts}
+            cartProductIncrease={cartProductIncrease}
+            cartProductDecrease={cartProductDecrease}
+            Discount={discount}
+            SubTotal={subTotal}
+            TotalPrice={totalPrice}
+            totalItems={totalProducts}
+          />
+        </div>
+      )}
+    </>
   );
 };

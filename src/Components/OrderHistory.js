@@ -28,13 +28,14 @@ export const OrderHistory = (props) => {
       } else {
         console.log("User is not signed in!");
       }
+      console.log(data.cartValues);
     });
   }, [props.orderId]);
 
   return (
     <>
       <OrderHistoryCard data={data} />
-      <ShippingDetails />
+      <ShippingDetails orderDate={data.orderDate} orderAddress={data.address} />
     </>
   );
 };

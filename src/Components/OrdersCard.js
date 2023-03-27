@@ -1,72 +1,7 @@
-import { useEffect, useState } from "react";
-
+import React from "react";
 import { Link } from "react-router-dom";
 
-import { fs, auth } from "../Config/Config";
-
-export const OrdersCard = () => {
-  const [documents, setDocuments] = useState([]);
-
-  function getStatus(date) {
-    const orderDate = new Date(date);
-    const currentDate = new Date();
-
-    const diffInDays = Math.ceil(
-      (currentDate - orderDate) / (1000 * 60 * 60 * 24)
-    );
-
-    switch (true) {
-      case diffInDays < 10:
-        return "processing";
-      case diffInDays < 15:
-        return "shipped";
-      default:
-        return "delivered";
-    }
-  }
-
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) {
-        const phoneNumber = user.phoneNumber;
-        const collectionName = `Order ${phoneNumber}`;
-        fs.collection(collectionName)
-          .get()
-          .then((querySnapshot) => {
-            const data = querySnapshot.docs.map((doc) => {
-              const date = new Date(doc.data().orderDate);
-
-              const deliveryDate = date.setDate(date.getDate() + 15);
-              const formattedDate = new Date(
-                doc.data().orderDate
-              ).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              });
-              const formattedDeliveryDate = new Date(
-                deliveryDate
-              ).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              });
-              return {
-                ...doc.data(),
-                orderDate: formattedDate,
-                dateDelivery: formattedDeliveryDate,
-                orderDetails: doc.id,
-                status: getStatus(doc.data().orderDate),
-              };
-            });
-            setDocuments(data);
-          });
-      }
-    });
-
-    return unsubscribe;
-  }, []);
-
+export const OrdersCard = ({ documents }) => {
   return (
     <div className="order__card_together">
       {documents.map((doc, index) => (
