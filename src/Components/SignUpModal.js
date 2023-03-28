@@ -53,6 +53,25 @@ export const SignUpModal = () => {
     }
   };
 
+  const reset = () => {
+    setPhoneDetails(true);
+    setShowOtp(false);
+    setShowDetails(false);
+    setOTP("");
+    setPhoneNumber("");
+    setIsPhoneNumberValid(false);
+    setOtpValid(false);
+    setIsOtpTouched(false);
+    setIsInputTouched(false);
+    setEmail("");
+    setFirstName("");
+    setLastName("");
+    setIsValidEmail(true);
+    setIsButtonDisabled(false);
+    setFirstImeUser(false);
+    toggleModalSignUp();
+  };
+
   const generateReCaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
@@ -123,22 +142,7 @@ export const SignUpModal = () => {
             })
             .catch((error) => console.log(error.message));
         }
-        setPhoneDetails(true);
-        setShowOtp(false);
-        setShowDetails(false);
-        setOTP("");
-        setPhoneNumber("");
-        setIsPhoneNumberValid(false);
-        setOtpValid(false);
-        setIsOtpTouched(false);
-        setIsInputTouched(false);
-        setEmail("");
-        setFirstName("");
-        setLastName("");
-        setIsValidEmail(true);
-        setIsButtonDisabled(false);
-        setFirstImeUser(false);
-        toggleModalSignUp();
+        reset();
         switchStatement(modalProps.type);
         toast.success("You have been logged in successfully", {
           position: "top-right",
@@ -209,13 +213,13 @@ export const SignUpModal = () => {
   return (
     <>
       {signUpModalIsOpen && (
-        <div className="signUp__modal" onClick={toggleModalSignUp}>
+        <div className="signUp__modal" onClick={reset}>
           <div id="recaptcha-container"></div>
           <div
             className="signUp__modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <span className="signUp__close-button" onClick={toggleModalSignUp}>
+            <span className="signUp__close-button" onClick={reset}>
               <img
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiIGZpbGw9IiNFODY2NjkiLz4KPHBhdGggZD0iTTMyLjUgMTcuNUwxNy40OTk5IDMyLjUwMDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTMyLjUgMzIuNUwxNy40OTk5IDE3LjQ5OTkiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg=="
                 alt="close-btn"

@@ -4813,6 +4813,7 @@ margin-bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: transparent;
+    z-index: 9000000;
 }
 
 .pdp_popup.show {

@@ -12,6 +12,7 @@ export const SignUpDetails = (props) => {
         placeholder="First Name *"
         value={props.firstName}
         onChange={props.handleFirstNameChange}
+        autocomplete="off"
       />
       <input
         class="phone__number-form_input"
@@ -19,6 +20,7 @@ export const SignUpDetails = (props) => {
         placeholder="Last Name *"
         value={props.lastName}
         onChange={props.handleLastNameChange}
+        autocomplete="off"
       />
       <input
         class="phone__number-form_input form_mt-10"
@@ -26,6 +28,7 @@ export const SignUpDetails = (props) => {
         placeholder="Email ID *"
         value={props.email}
         onChange={props.handleEmailChange}
+        autocomplete="off"
       ></input>
 
       {!props.isValidEmail && props.isButtonDisabled && (

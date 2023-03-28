@@ -19,10 +19,6 @@ export const Otp = (props) => {
       {props.otpValid && (
         <div class="phone__number-form_error_message">Incorrect OTP</div>
       )}
-      <span class="phone__number-form_message form_opacity">
-        Didn't receive OTP?
-      </span>
-      <button class="phone__number-form-resend">Resend </button>
       <button
         class="phone__number-submit-button"
         onClick={props.VerifyOTP}

@@ -23,6 +23,7 @@ export const CheckoutDetails = ({
                       id="name"
                       value={formValues.name}
                       onChange={handleChange}
+                      autocomplete="off"
                     />
                     <label for="name" class="floating-label">
                       Name<span class="asterisk"></span>
@@ -45,6 +46,7 @@ export const CheckoutDetails = ({
                       id="phone"
                       value={formValues.phoneNumber}
                       onChange={handleChange}
+                      autocomplete="off"
                     />
                     <label for="phone" class="floating-label">
                       Phone Number<span class="asterisk"></span>
@@ -62,7 +64,7 @@ export const CheckoutDetails = ({
                   <div class="inner-wrap">
                     <input
                       type="text"
-                      autocomplete="false"
+                      autocomplete="off"
                       name="pincode"
                       class="input-element  "
                       id="pincode"
