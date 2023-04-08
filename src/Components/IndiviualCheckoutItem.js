@@ -16,7 +16,12 @@ export const IndiviualCheckoutItem = ({
 
   return (
     <div class="media item">
-      <img src={cartProduct.prod_img} class="image" alt="product" />
+      <img
+        src={cartProduct.prod_img}
+        class="image"
+        alt="product"
+        loading="lazy"
+      />
       <div class="media-body details">
         <div class="product-name">{cartProduct.name}</div>
 

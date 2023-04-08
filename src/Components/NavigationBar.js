@@ -98,7 +98,11 @@ export const NavigationBar = (props) => {
     <>
       <div className="navigationBar__header">
         <Link className="navigationBar__logo" to="/">
-          <img src="https://imgur.com/5C66rTg.jpg" alt="website-logo" />
+          <img
+            src="https://imgur.com/5C66rTg.jpg"
+            alt="website-logo"
+            loading="lazy"
+          />
         </Link>
 
         <div className={`navigationBar__navbar ${isOpen ? "open" : ""}`}>

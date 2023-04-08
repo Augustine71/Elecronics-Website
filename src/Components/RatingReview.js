@@ -13,6 +13,7 @@ export const RatingReview = ({ data }) => {
               <img
                 src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
                 alt="verified mark"
+                loading="lazy"
               />
             </div>
           </div>

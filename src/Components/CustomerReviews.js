@@ -58,6 +58,7 @@ export const CustomerReviews = () => {
                   <img
                     src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto"
                     className="customers_prod-img"
+                    loading="lazy"
                   />
                   <div className="customers_name">
                     Apple iPhone 14 Pro (128GB, Deep Purple)
@@ -79,6 +80,7 @@ export const CustomerReviews = () => {
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
                       alt="verified mark"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -88,6 +90,7 @@ export const CustomerReviews = () => {
                   <img
                     src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664374836/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/263024_mcyrnq.png/mxw_2048,f_auto"
                     className="customers_prod-img"
+                    loading="lazy"
                   />
                   <div className="customers_name">
                     boAt Airdopes 113 Wireless Gaming Earbuds
@@ -110,6 +113,7 @@ export const CustomerReviews = () => {
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
                       alt="verified mark"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -119,6 +123,7 @@ export const CustomerReviews = () => {
                   <img
                     src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1667853240/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/233723_0_wuj5kk.png/mxw_600,s_jp2,s_videoimg,ns_atwebp,f_auto"
                     className="customers_prod-img"
+                    loading="lazy"
                   />
                   <div className="customers_name">
                     Lenovo Yoga Smart Tab Wi-Fi + 4G Android Tablet
@@ -142,6 +147,7 @@ export const CustomerReviews = () => {
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
                       alt="verified mark"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -151,6 +157,7 @@ export const CustomerReviews = () => {
                   <img
                     src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664416536/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257130_0_htx0fu.png/mxw_200,s_jp2,s_videoimg,ns_atwebp,f_auto"
                     className="customers_prod-img"
+                    loading="lazy"
                   />
                   <div className="customers_name">
                     ASUS TUF Gaming A17 FA706IC-HX036W AMD Ryzen 7
@@ -171,6 +178,7 @@ export const CustomerReviews = () => {
                     <img
                       src="https://ik.ourlittlejoys.com/mosaic-wellness/image/upload/v1629700121/staging/Home/Images/Group_2298.png"
                       alt="verified mark"
+                      loading="lazy"
                     />
                   </div>
                 </div>

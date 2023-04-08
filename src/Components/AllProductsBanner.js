@@ -12,6 +12,7 @@ export const AllProductsBanner = () => {
             : "https://imgur.com/VSWcnxZ.jpg"
         }
         alt="homepage__banner"
+        loading="lazy"
       />
     </div>
   );

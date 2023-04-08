@@ -16,7 +16,11 @@ export const OrderHistoryCard = ({ data }) => {
         {data.cartValues &&
           data.cartValues.map((item, index) => (
             <div className="order__history-item" key={index}>
-              <img src={item.prod_img} className="order__history-item-img" />
+              <img
+                src={item.prod_img}
+                className="order__history-item-img"
+                loading="lazy"
+              />
               <div className="order__history-item-details">
                 <div className="order__history-item-name">{item.name}</div>
                 <div className="order__history-item-price">

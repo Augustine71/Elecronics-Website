@@ -38,12 +38,13 @@ export const CustomImageSlider = (props) => {
               className={`custom__image ${
                 activeIndex === index ? "active" : ""
               }`}
+              loading="lazy"
             />
           );
         })}
       </div>
       <div className="custom__images">
-        <img src={mainImage.img} alt={props.imgs[0].alt} />
+        <img src={mainImage.img} alt={props.imgs[0].alt} loading="lazy" />
       </div>
     </div>
   );
